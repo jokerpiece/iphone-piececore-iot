@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3710329B1CA5198D00E76D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329A1CA5198D00E76D9A /* main.m */; };
+		3710329E1CA5198D00E76D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329D1CA5198D00E76D9A /* AppDelegate.m */; };
+		371032A41CA5198D00E76D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371032A21CA5198D00E76D9A /* Main.storyboard */; };
+		371032A61CA5198D00E76D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371032A51CA5198D00E76D9A /* Assets.xcassets */; };
+		371032A91CA5198D00E76D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */; };
+		371032B41CA5198D00E76D9A /* terumiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032B31CA5198D00E76D9A /* terumiTests.m */; };
+		371032BF1CA5198D00E76D9A /* terumiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032BE1CA5198D00E76D9A /* terumiUITests.m */; };
+		371032F21CA51B5A00E76D9A /* TutorialBatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032CF1CA51B5A00E76D9A /* TutorialBatteryView.m */; };
+		371032F31CA51B5A00E76D9A /* TutorialBatteryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032D01CA51B5A00E76D9A /* TutorialBatteryView.xib */; };
+		371032F41CA51B5A00E76D9A /* TutorialSettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032D31CA51B5A00E76D9A /* TutorialSettiView.m */; };
+		371032F51CA51B5A00E76D9A /* TutorialSettiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032D41CA51B5A00E76D9A /* TutorialSettiView.xib */; };
+		371032F71CA51B5A00E76D9A /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032DC1CA51B5A00E76D9A /* infoViewController.m */; };
+		371032F81CA51B5A00E76D9A /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032DD1CA51B5A00E76D9A /* infoViewController.xib */; };
+		371032F91CA51B5A00E76D9A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032E01CA51B5A00E76D9A /* MenuViewController.m */; };
+		371032FA1CA51B5A00E76D9A /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032E11CA51B5A00E76D9A /* MenuViewController.xib */; };
+		371032FB1CA51B5A00E76D9A /* SelectRiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032E41CA51B5A00E76D9A /* SelectRiceViewController.m */; };
+		371032FC1CA51B5A00E76D9A /* SelectRiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032E51CA51B5A00E76D9A /* SelectRiceViewController.xib */; };
+		371032FD1CA51B5A00E76D9A /* SencorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032E81CA51B5A00E76D9A /* SencorViewController.m */; };
+		371032FE1CA51B5A00E76D9A /* SencorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032E91CA51B5A00E76D9A /* SencorViewController.xib */; };
+		371032FF1CA51B5A00E76D9A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032EC1CA51B5A00E76D9A /* SettingViewController.m */; };
+		371033001CA51B5A00E76D9A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032ED1CA51B5A00E76D9A /* SettingViewController.xib */; };
+		371033011CA51B5A00E76D9A /* SettlementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032F01CA51B5A00E76D9A /* SettlementViewController.m */; };
+		371033021CA51B5A00E76D9A /* SettlementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032F11CA51B5A00E76D9A /* SettlementViewController.xib */; };
+		371033071CA51B6500E76D9A /* DistanceSencorData.m in Sources */ = {isa = PBXBuildFile; fileRef = 371033061CA51B6500E76D9A /* DistanceSencorData.m */; };
+		371033151CA51B8400E76D9A /* BLEConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710330E1CA51B8400E76D9A /* BLEConnector.m */; };
+		371033161CA51B8400E76D9A /* BaseSencorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371033121CA51B8400E76D9A /* BaseSencorViewController.m */; };
+		3710331B1CA531C800E76D9A /* BaseDistanceSencorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710331A1CA531C800E76D9A /* BaseDistanceSencorViewController.m */; };
+		3710331F1CA53B1300E76D9A /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3710331D1CA53B1300E76D9A /* digital-7 (mono).ttf */; };
+		371033201CA53B1300E76D9A /* 衡山毛筆フォント.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3710331E1CA53B1300E76D9A /* 衡山毛筆フォント.ttf */; };
+		FF7D41EC1E8B988C54797E26 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58EC1846DE112BE4F774258 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		371032B01CA5198D00E76D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3710328E1CA5198D00E76D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 371032951CA5198D00E76D9A;
+			remoteInfo = terumi;
+		};
+		371032BB1CA5198D00E76D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3710328E1CA5198D00E76D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 371032951CA5198D00E76D9A;
+			remoteInfo = terumi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		371032961CA5198D00E76D9A /* terumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = terumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3710329A1CA5198D00E76D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3710329C1CA5198D00E76D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3710329D1CA5198D00E76D9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		371032A31CA5198D00E76D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		371032A51CA5198D00E76D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		371032A81CA5198D00E76D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		371032AA1CA5198D00E76D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371032AF1CA5198D00E76D9A /* terumiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = terumiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		371032B31CA5198D00E76D9A /* terumiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = terumiTests.m; sourceTree = "<group>"; };
+		371032B51CA5198D00E76D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371032BA1CA5198D00E76D9A /* terumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = terumiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		371032BE1CA5198D00E76D9A /* terumiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = terumiUITests.m; sourceTree = "<group>"; };
+		371032C01CA5198D00E76D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371032CE1CA51B5A00E76D9A /* TutorialBatteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialBatteryView.h; sourceTree = "<group>"; };
+		371032CF1CA51B5A00E76D9A /* TutorialBatteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialBatteryView.m; sourceTree = "<group>"; };
+		371032D01CA51B5A00E76D9A /* TutorialBatteryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialBatteryView.xib; sourceTree = "<group>"; };
+		371032D21CA51B5A00E76D9A /* TutorialSettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialSettiView.h; sourceTree = "<group>"; };
+		371032D31CA51B5A00E76D9A /* TutorialSettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialSettiView.m; sourceTree = "<group>"; };
+		371032D41CA51B5A00E76D9A /* TutorialSettiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSettiView.xib; sourceTree = "<group>"; };
+		371032DB1CA51B5A00E76D9A /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		371032DC1CA51B5A00E76D9A /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		371032DD1CA51B5A00E76D9A /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
+		371032DF1CA51B5A00E76D9A /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		371032E01CA51B5A00E76D9A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		371032E11CA51B5A00E76D9A /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		371032E31CA51B5A00E76D9A /* SelectRiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRiceViewController.h; sourceTree = "<group>"; };
+		371032E41CA51B5A00E76D9A /* SelectRiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRiceViewController.m; sourceTree = "<group>"; };
+		371032E51CA51B5A00E76D9A /* SelectRiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectRiceViewController.xib; sourceTree = "<group>"; };
+		371032E71CA51B5A00E76D9A /* SencorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SencorViewController.h; sourceTree = "<group>"; };
+		371032E81CA51B5A00E76D9A /* SencorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SencorViewController.m; sourceTree = "<group>"; };
+		371032E91CA51B5A00E76D9A /* SencorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SencorViewController.xib; sourceTree = "<group>"; };
+		371032EB1CA51B5A00E76D9A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		371032EC1CA51B5A00E76D9A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		371032ED1CA51B5A00E76D9A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		371032EF1CA51B5A00E76D9A /* SettlementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementViewController.h; sourceTree = "<group>"; };
+		371032F01CA51B5A00E76D9A /* SettlementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementViewController.m; sourceTree = "<group>"; };
+		371032F11CA51B5A00E76D9A /* SettlementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettlementViewController.xib; sourceTree = "<group>"; };
+		371033051CA51B6500E76D9A /* DistanceSencorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceSencorData.h; sourceTree = "<group>"; };
+		371033061CA51B6500E76D9A /* DistanceSencorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceSencorData.m; sourceTree = "<group>"; };
+		3710330D1CA51B8400E76D9A /* BLEConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEConnector.h; sourceTree = "<group>"; };
+		3710330E1CA51B8400E76D9A /* BLEConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEConnector.m; sourceTree = "<group>"; };
+		371033111CA51B8400E76D9A /* BaseSencorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSencorViewController.h; sourceTree = "<group>"; };
+		371033121CA51B8400E76D9A /* BaseSencorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSencorViewController.m; sourceTree = "<group>"; };
+		371033171CA52EED00E76D9A /* BLEConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEConst.h; sourceTree = "<group>"; };
+		371033191CA531C800E76D9A /* BaseDistanceSencorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDistanceSencorViewController.h; sourceTree = "<group>"; };
+		3710331A1CA531C800E76D9A /* BaseDistanceSencorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDistanceSencorViewController.m; sourceTree = "<group>"; };
+		3710331D1CA53B1300E76D9A /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
+		3710331E1CA53B1300E76D9A /* 衡山毛筆フォント.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "衡山毛筆フォント.ttf"; sourceTree = "<group>"; };
+		CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E58EC1846DE112BE4F774258 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		371032931CA5198D00E76D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7D41EC1E8B988C54797E26 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032AC1CA5198D00E76D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032B71CA5198D00E76D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3710328D1CA5198D00E76D9A = {
+			isa = PBXGroup;
+			children = (
+				371033081CA51B8400E76D9A /* IotCore */,
+				371032981CA5198D00E76D9A /* terumi */,
+				371032B21CA5198D00E76D9A /* terumiTests */,
+				371032BD1CA5198D00E76D9A /* terumiUITests */,
+				371032971CA5198D00E76D9A /* Products */,
+				69670D5CEC971E96E35DF42A /* Pods */,
+				385E1D7328207096617B30CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		371032971CA5198D00E76D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371032961CA5198D00E76D9A /* terumi.app */,
+				371032AF1CA5198D00E76D9A /* terumiTests.xctest */,
+				371032BA1CA5198D00E76D9A /* terumiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371032981CA5198D00E76D9A /* terumi */ = {
+			isa = PBXGroup;
+			children = (
+				3710331C1CA53B1300E76D9A /* font */,
+				371033031CA51B6500E76D9A /* Data */,
+				371032CC1CA51B5A00E76D9A /* View */,
+				371032D51CA51B5A00E76D9A /* ViewController */,
+				3710329C1CA5198D00E76D9A /* AppDelegate.h */,
+				3710329D1CA5198D00E76D9A /* AppDelegate.m */,
+				371032A21CA5198D00E76D9A /* Main.storyboard */,
+				371032A51CA5198D00E76D9A /* Assets.xcassets */,
+				371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */,
+				371032AA1CA5198D00E76D9A /* Info.plist */,
+				371032991CA5198D00E76D9A /* Supporting Files */,
+				371033171CA52EED00E76D9A /* BLEConst.h */,
+			);
+			path = terumi;
+			sourceTree = "<group>";
+		};
+		371032991CA5198D00E76D9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3710329A1CA5198D00E76D9A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		371032B21CA5198D00E76D9A /* terumiTests */ = {
+			isa = PBXGroup;
+			children = (
+				371032B31CA5198D00E76D9A /* terumiTests.m */,
+				371032B51CA5198D00E76D9A /* Info.plist */,
+			);
+			path = terumiTests;
+			sourceTree = "<group>";
+		};
+		371032BD1CA5198D00E76D9A /* terumiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				371032BE1CA5198D00E76D9A /* terumiUITests.m */,
+				371032C01CA5198D00E76D9A /* Info.plist */,
+			);
+			path = terumiUITests;
+			sourceTree = "<group>";
+		};
+		371032CC1CA51B5A00E76D9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				371032CD1CA51B5A00E76D9A /* TutorialBattery */,
+				371032D11CA51B5A00E76D9A /* TutorialSetti */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		371032CD1CA51B5A00E76D9A /* TutorialBattery */ = {
+			isa = PBXGroup;
+			children = (
+				371032CE1CA51B5A00E76D9A /* TutorialBatteryView.h */,
+				371032CF1CA51B5A00E76D9A /* TutorialBatteryView.m */,
+				371032D01CA51B5A00E76D9A /* TutorialBatteryView.xib */,
+			);
+			path = TutorialBattery;
+			sourceTree = "<group>";
+		};
+		371032D11CA51B5A00E76D9A /* TutorialSetti */ = {
+			isa = PBXGroup;
+			children = (
+				371032D21CA51B5A00E76D9A /* TutorialSettiView.h */,
+				371032D31CA51B5A00E76D9A /* TutorialSettiView.m */,
+				371032D41CA51B5A00E76D9A /* TutorialSettiView.xib */,
+			);
+			path = TutorialSetti;
+			sourceTree = "<group>";
+		};
+		371032D51CA51B5A00E76D9A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				371033181CA5318100E76D9A /* Base */,
+				371032DA1CA51B5A00E76D9A /* Info */,
+				371032DE1CA51B5A00E76D9A /* Menu */,
+				371032E21CA51B5A00E76D9A /* SelectRice */,
+				371032E61CA51B5A00E76D9A /* Sensor */,
+				371032EA1CA51B5A00E76D9A /* Setting */,
+				371032EE1CA51B5A00E76D9A /* Settlement */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		371032DA1CA51B5A00E76D9A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				371032DB1CA51B5A00E76D9A /* infoViewController.h */,
+				371032DC1CA51B5A00E76D9A /* infoViewController.m */,
+				371032DD1CA51B5A00E76D9A /* infoViewController.xib */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		371032DE1CA51B5A00E76D9A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				371032DF1CA51B5A00E76D9A /* MenuViewController.h */,
+				371032E01CA51B5A00E76D9A /* MenuViewController.m */,
+				371032E11CA51B5A00E76D9A /* MenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		371032E21CA51B5A00E76D9A /* SelectRice */ = {
+			isa = PBXGroup;
+			children = (
+				371032E31CA51B5A00E76D9A /* SelectRiceViewController.h */,
+				371032E41CA51B5A00E76D9A /* SelectRiceViewController.m */,
+				371032E51CA51B5A00E76D9A /* SelectRiceViewController.xib */,
+			);
+			path = SelectRice;
+			sourceTree = "<group>";
+		};
+		371032E61CA51B5A00E76D9A /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				371032E71CA51B5A00E76D9A /* SencorViewController.h */,
+				371032E81CA51B5A00E76D9A /* SencorViewController.m */,
+				371032E91CA51B5A00E76D9A /* SencorViewController.xib */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		371032EA1CA51B5A00E76D9A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				371032EB1CA51B5A00E76D9A /* SettingViewController.h */,
+				371032EC1CA51B5A00E76D9A /* SettingViewController.m */,
+				371032ED1CA51B5A00E76D9A /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		371032EE1CA51B5A00E76D9A /* Settlement */ = {
+			isa = PBXGroup;
+			children = (
+				371032EF1CA51B5A00E76D9A /* SettlementViewController.h */,
+				371032F01CA51B5A00E76D9A /* SettlementViewController.m */,
+				371032F11CA51B5A00E76D9A /* SettlementViewController.xib */,
+			);
+			path = Settlement;
+			sourceTree = "<group>";
+		};
+		371033031CA51B6500E76D9A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				371033041CA51B6500E76D9A /* SencorData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		371033041CA51B6500E76D9A /* SencorData */ = {
+			isa = PBXGroup;
+			children = (
+				371033051CA51B6500E76D9A /* DistanceSencorData.h */,
+				371033061CA51B6500E76D9A /* DistanceSencorData.m */,
+			);
+			path = SencorData;
+			sourceTree = "<group>";
+		};
+		371033081CA51B8400E76D9A /* IotCore */ = {
+			isa = PBXGroup;
+			children = (
+				3710330C1CA51B8400E76D9A /* Model */,
+				3710330F1CA51B8400E76D9A /* Resources */,
+				371033101CA51B8400E76D9A /* ViewController */,
+			);
+			name = IotCore;
+			path = ../IotCore;
+			sourceTree = "<group>";
+		};
+		3710330C1CA51B8400E76D9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3710330D1CA51B8400E76D9A /* BLEConnector.h */,
+				3710330E1CA51B8400E76D9A /* BLEConnector.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3710330F1CA51B8400E76D9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		371033101CA51B8400E76D9A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				371033111CA51B8400E76D9A /* BaseSencorViewController.h */,
+				371033121CA51B8400E76D9A /* BaseSencorViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		371033181CA5318100E76D9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				371033191CA531C800E76D9A /* BaseDistanceSencorViewController.h */,
+				3710331A1CA531C800E76D9A /* BaseDistanceSencorViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3710331C1CA53B1300E76D9A /* font */ = {
+			isa = PBXGroup;
+			children = (
+				3710331D1CA53B1300E76D9A /* digital-7 (mono).ttf */,
+				3710331E1CA53B1300E76D9A /* 衡山毛筆フォント.ttf */,
+			);
+			path = font;
+			sourceTree = SOURCE_ROOT;
+		};
+		385E1D7328207096617B30CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E58EC1846DE112BE4F774258 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69670D5CEC971E96E35DF42A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */,
+				CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		371032951CA5198D00E76D9A /* terumi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371032C31CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumi" */;
+			buildPhases = (
+				71120759B95E2606EF223679 /* Check Pods Manifest.lock */,
+				371032921CA5198D00E76D9A /* Sources */,
+				371032931CA5198D00E76D9A /* Frameworks */,
+				371032941CA5198D00E76D9A /* Resources */,
+				3F570D5A79B00E1DB050E9DA /* Embed Pods Frameworks */,
+				D5FD6471AF20B2AE62FA066B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = terumi;
+			productName = terumi;
+			productReference = 371032961CA5198D00E76D9A /* terumi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		371032AE1CA5198D00E76D9A /* terumiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371032C61CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumiTests" */;
+			buildPhases = (
+				371032AB1CA5198D00E76D9A /* Sources */,
+				371032AC1CA5198D00E76D9A /* Frameworks */,
+				371032AD1CA5198D00E76D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				371032B11CA5198D00E76D9A /* PBXTargetDependency */,
+			);
+			name = terumiTests;
+			productName = terumiTests;
+			productReference = 371032AF1CA5198D00E76D9A /* terumiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		371032B91CA5198D00E76D9A /* terumiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371032C91CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumiUITests" */;
+			buildPhases = (
+				371032B61CA5198D00E76D9A /* Sources */,
+				371032B71CA5198D00E76D9A /* Frameworks */,
+				371032B81CA5198D00E76D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				371032BC1CA5198D00E76D9A /* PBXTargetDependency */,
+			);
+			name = terumiUITests;
+			productName = terumiUITests;
+			productReference = 371032BA1CA5198D00E76D9A /* terumiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3710328E1CA5198D00E76D9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jokerpiece;
+				TargetAttributes = {
+					371032951CA5198D00E76D9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					371032AE1CA5198D00E76D9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 371032951CA5198D00E76D9A;
+					};
+					371032B91CA5198D00E76D9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 371032951CA5198D00E76D9A;
+					};
+				};
+			};
+			buildConfigurationList = 371032911CA5198D00E76D9A /* Build configuration list for PBXProject "terumi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3710328D1CA5198D00E76D9A;
+			productRefGroup = 371032971CA5198D00E76D9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				371032951CA5198D00E76D9A /* terumi */,
+				371032AE1CA5198D00E76D9A /* terumiTests */,
+				371032B91CA5198D00E76D9A /* terumiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		371032941CA5198D00E76D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3710331F1CA53B1300E76D9A /* digital-7 (mono).ttf in Resources */,
+				371032A91CA5198D00E76D9A /* LaunchScreen.storyboard in Resources */,
+				371033001CA51B5A00E76D9A /* SettingViewController.xib in Resources */,
+				371033021CA51B5A00E76D9A /* SettlementViewController.xib in Resources */,
+				371032FE1CA51B5A00E76D9A /* SencorViewController.xib in Resources */,
+				371032A61CA5198D00E76D9A /* Assets.xcassets in Resources */,
+				371032F81CA51B5A00E76D9A /* infoViewController.xib in Resources */,
+				371032F31CA51B5A00E76D9A /* TutorialBatteryView.xib in Resources */,
+				371032A41CA5198D00E76D9A /* Main.storyboard in Resources */,
+				371032FA1CA51B5A00E76D9A /* MenuViewController.xib in Resources */,
+				371032F51CA51B5A00E76D9A /* TutorialSettiView.xib in Resources */,
+				371033201CA53B1300E76D9A /* 衡山毛筆フォント.ttf in Resources */,
+				371032FC1CA51B5A00E76D9A /* SelectRiceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032AD1CA5198D00E76D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032B81CA5198D00E76D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F570D5A79B00E1DB050E9DA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71120759B95E2606EF223679 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FD6471AF20B2AE62FA066B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		371032921CA5198D00E76D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371032F21CA51B5A00E76D9A /* TutorialBatteryView.m in Sources */,
+				3710329E1CA5198D00E76D9A /* AppDelegate.m in Sources */,
+				371032F71CA51B5A00E76D9A /* infoViewController.m in Sources */,
+				371033151CA51B8400E76D9A /* BLEConnector.m in Sources */,
+				371032FD1CA51B5A00E76D9A /* SencorViewController.m in Sources */,
+				371032F41CA51B5A00E76D9A /* TutorialSettiView.m in Sources */,
+				3710331B1CA531C800E76D9A /* BaseDistanceSencorViewController.m in Sources */,
+				371033011CA51B5A00E76D9A /* SettlementViewController.m in Sources */,
+				371032F91CA51B5A00E76D9A /* MenuViewController.m in Sources */,
+				371033071CA51B6500E76D9A /* DistanceSencorData.m in Sources */,
+				371033161CA51B8400E76D9A /* BaseSencorViewController.m in Sources */,
+				3710329B1CA5198D00E76D9A /* main.m in Sources */,
+				371032FB1CA51B5A00E76D9A /* SelectRiceViewController.m in Sources */,
+				371032FF1CA51B5A00E76D9A /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032AB1CA5198D00E76D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371032B41CA5198D00E76D9A /* terumiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371032B61CA5198D00E76D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371032BF1CA5198D00E76D9A /* terumiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		371032B11CA5198D00E76D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 371032951CA5198D00E76D9A /* terumi */;
+			targetProxy = 371032B01CA5198D00E76D9A /* PBXContainerItemProxy */;
+		};
+		371032BC1CA5198D00E76D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 371032951CA5198D00E76D9A /* terumi */;
+			targetProxy = 371032BB1CA5198D00E76D9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		371032A21CA5198D00E76D9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371032A31CA5198D00E76D9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371032A81CA5198D00E76D9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		371032C11CA5198D00E76D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		371032C21CA5198D00E76D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		371032C41CA5198D00E76D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = terumi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		371032C51CA5198D00E76D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = terumi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		371032C71CA5198D00E76D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = terumiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/terumi.app/terumi";
+			};
+			name = Debug;
+		};
+		371032C81CA5198D00E76D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = terumiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/terumi.app/terumi";
+			};
+			name = Release;
+		};
+		371032CA1CA5198D00E76D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = terumiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = terumi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		371032CB1CA5198D00E76D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = terumiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = terumi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371032911CA5198D00E76D9A /* Build configuration list for PBXProject "terumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371032C11CA5198D00E76D9A /* Debug */,
+				371032C21CA5198D00E76D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371032C31CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371032C41CA5198D00E76D9A /* Debug */,
+				371032C51CA5198D00E76D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371032C61CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371032C71CA5198D00E76D9A /* Debug */,
+				371032C81CA5198D00E76D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371032C91CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371032CA1CA5198D00E76D9A /* Debug */,
+				371032CB1CA5198D00E76D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3710328E1CA5198D00E76D9A /* Project object */;
+}
