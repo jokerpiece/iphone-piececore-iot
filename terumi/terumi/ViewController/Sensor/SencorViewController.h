@@ -49,5 +49,6 @@
 - (IBAction)questionAction:(id)sender;
 -(void)settinged;
 -(void)startScanWithTimer;
+-(void)menuAction:(id)sender;
 
 @end

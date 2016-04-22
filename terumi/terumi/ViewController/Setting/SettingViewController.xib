@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController">
@@ -36,7 +36,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-cR-xbq">
                     <rect key="frame" x="124" y="86" width="85" height="21"/>
@@ -51,10 +51,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGj-eY-2fh">
-                    <rect key="frame" x="8" y="86" width="304" height="196"/>
+                    <rect key="frame" x="8" y="98" width="304" height="196"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新しくお米を発注したいタイミングのお米の量になったら、設定ボタンをタップして下さい。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guj-Fe-cT7">
-                            <rect key="frame" x="7" y="35" width="289" height="79"/>
+                            <rect key="frame" x="7" y="45" width="289" height="79"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -65,33 +65,36 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お米の最小量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-of-dIr">
                                     <rect key="frame" x="8" y="10" width="102" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.89803928136825562" green="0.65098041296005249" blue="0.38823533058166504" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.68627450980392157" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtW-BG-zTD">
-                            <rect key="frame" x="129" y="158" width="46" height="30"/>
-                            <state key="normal" title="設定"/>
-                            <connections>
-                                <action selector="onMinSetting:" destination="-1" eventType="touchUpInside" id="Kp5-yL-f6H"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-wa-yDi">
                             <rect key="frame" x="53" y="122" width="198" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtW-BG-zTD">
+                            <rect key="frame" x="97" y="158" width="110" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="設定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMinSetting:" destination="-1" eventType="touchUpInside" id="Kp5-yL-f6H"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Smd-0K-ZoQ">
-                    <rect key="frame" x="8" y="291" width="304" height="196"/>
+                    <rect key="frame" x="8" y="316" width="304" height="196"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お米の袋から、米びつにお米をセットしたら設定ボタンをタップして下さい。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzs-r7-Guj">
-                            <rect key="frame" x="7" y="35" width="289" height="79"/>
+                            <rect key="frame" x="7" y="42" width="289" height="79"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -102,30 +105,33 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お米の最大量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI4-bm-Hgg">
                                     <rect key="frame" x="8" y="10" width="102" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.062745101749897003" green="0.55686277151107788" blue="0.83921575546264648" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.22745098039215686" blue="0.4392156862745098" alpha="1" colorSpace="deviceRGB"/>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-jL-Moe">
-                            <rect key="frame" x="137" y="158" width="30" height="30"/>
-                            <state key="normal" title="設定"/>
-                            <connections>
-                                <action selector="onMaxSetting:" destination="-1" eventType="touchUpInside" id="tFS-Wc-3ti"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-GT-qSv">
                             <rect key="frame" x="53" y="129" width="198" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-jL-Moe">
+                            <rect key="frame" x="97" y="160" width="110" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="設定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMaxSetting:" destination="-1" eventType="touchUpInside" id="tFS-Wc-3ti"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="553" y="412"/>
         </view>

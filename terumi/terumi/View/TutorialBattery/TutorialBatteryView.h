@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TutorialSettiView.h"
 
 @interface TutorialBatteryView : UIView
+
++ (instancetype)myView;
 
 @end

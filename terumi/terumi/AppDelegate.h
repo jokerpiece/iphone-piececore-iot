@@ -8,7 +8,7 @@
 
 #import "CoreDelegate.h"
 
-@interface AppDelegate : CoreDelegate
+@interface AppDelegate : CoreDelegate<UIApplicationDelegate>
 
 
 

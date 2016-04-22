@@ -18,4 +18,47 @@
 }
 */
 
+- (void)_init
+{
+    // initialize
+}
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self _init];
+    }
+    return self;
+}
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self _init];
+    }
+    return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    // 初期設定など
+}
+
++ (instancetype)myView
+{
+    // xib ファイルから MyView のインスタンスを得る
+    UINib *nib = [UINib nibWithNibName:@"TutorialBatteryView" bundle:nil];
+    TutorialBatteryView *view = [nib instantiateWithOwner:self options:nil][0];
+    return view;
+}
+- (IBAction)tapNextBtn:(id)sender {
+    TutorialSettiView *tbvc = [TutorialSettiView setSettiView];
+    [self addSubview:tbvc];
+}
+
+
+
+
 @end

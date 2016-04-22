@@ -10,6 +10,8 @@
 #import "BLEConst.h"
 #import "SVProgressHUD.h"
 
+#import "LnitialMenuViewController.h"
+
 typedef enum {
     minSearh = 0,
     maxSearch,
@@ -33,28 +35,19 @@ typedef enum {
     self.seachType = none;
     self.maxlbl.text = [NSString stringWithFormat:@"%d",self.data.maxDistance];
     self.minlbl.text = [NSString stringWithFormat:@"%d",self.data.minDistance];
-    // Do any additional setup after loading the view from its nib.
 }
-
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
+    if(self.count == 0){
+        self.count = 1;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 - (IBAction)onMaxSetting:(id)sender {
     [self startScanWithIdentifer:@"setting" retryTime:TIMER_RETRY retryCount:RETRY_COUNT];
     self.totalSeachCount = 0;
@@ -77,9 +70,7 @@ typedef enum {
     
 }
 
-
 -(void)updateAction{
-    
     
     if (self.seachType == none) {
         return;

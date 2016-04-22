@@ -6,14 +6,20 @@
 //  Copyright © 2016年 jokerpiece. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "SelectRiceViewController.h"
 #import "SettingViewController.h"
 #import "SencorViewController.h"
 #import <AudioToolbox/AudioServices.h>
+#import "LnitialMenuViewController.h"
+#import "ApprovalSettlementViewController.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) SencorViewController *sencorViewController;
+@property (strong, nonatomic) LnitialMenuViewController *lnitiaMenuViewController;
+@property (strong, nonatomic) ApprovalSettlementViewController *approvalSettlementViewController;
+@property (nonatomic,retain) UINavigationController* rootController;
 @property (nonatomic,strong) CBPeripheral *peripheral;
 
 @end
@@ -182,8 +188,6 @@
         
         UITabBarController *tabController = (UITabBarController *)self.window.rootViewController;
         UINavigationController* nc = [tabController.viewControllers objectAtIndex:0];
-        
-        
         //遷移先へ移動
         [tabController setSelectedViewController: nc];
         
@@ -191,6 +195,7 @@
     
     if (application.applicationState == UIApplicationStateActive)
     {//アプリがフォアグラウンドで起動している時にPUSH通知を受信した場合
+        
         UITabBarController *tabController = (UITabBarController *)self.window.rootViewController;
         [[tabController.viewControllers objectAtIndex:[PieceCoreConfig tabnumberInfo].intValue] tabBarItem].badgeValue = badge.stringValue;
         
@@ -218,5 +223,86 @@
     
     //application.applicationIconBadgeNumber = 0;
 }
+//
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+//    
+//    LnitialMenuViewController *viewController = [[LnitialMenuViewController alloc]init];
+//    self.window.rootViewController = viewController;
+//    [self.window makeKeyAndVisible];
+//    
+//    return YES;
+//}
+//
+//
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    // Push通知の許可画面を表示させる
+    UIUserNotificationType types = UIUserNotificationTypeBadge |
+    UIUserNotificationTypeSound |
+    UIUserNotificationTypeAlert;
+    UIUserNotificationSettings *mySettings =
+    [UIUserNotificationSettings settingsForTypes:types categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    
+    //リモートPush通知を受信するためのdeviceTokenを要求
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
+    //[self setTabBarController];
+    self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.lnitiaMenuViewController = [[LnitialMenuViewController alloc]initWithNibName:@"LnitialMenuViewController" bundle:nil];
+
+  //  self.rootController = [[UINavigationController alloc]initWithRootViewController:self.lnitiaMenuViewController];
+    self.lnitiaMenuViewController = [[LnitialMenuViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.lnitiaMenuViewController];
+    
+    self.window.rootViewController = navigationController;
+    [self.window setRootViewController:navigationController];
+    [self.window makeKeyAndVisible];
+
+    
+    return YES;
+}
+
+
+// DeviceToken受信成功
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *token = deviceToken.description;
+    
+    // <aaaa bbbb cccc dddd>みたいな形式でくるので、"<"、">"、"(空白)"を除去しておく
+    token = [token stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@">" withString:@""];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(@"deviceToken: %@", token);
+    
+    // ここでPushプロバイダーへのdeviceTokenを送信する
+}
+
+
+// DeviceToken受信失敗
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"deviceToken error: %@", [error description]);
+}
+
+// BackgroundFetchによるバックグラウンドの受信
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"pushInfo in Background: %@", [userInfo description]);
+    completionHandler(UIBackgroundFetchResultNoData);
+    
+    if (application.applicationState == UIApplicationStateInactive)
+    {//アプリがバックグラウンドで起動している時に、PUSH通知からアクティブになった場合
+        self.approvalSettlementViewController =[[ApprovalSettlementViewController alloc] initWithNibName:@"ApprovalSettlementViewController" bundle:nil];
+        [self.window setRootViewController:self.approvalSettlementViewController];
+        [self.window makeKeyAndVisible];
+
+    }
+
+    
+}
+
 
 @end

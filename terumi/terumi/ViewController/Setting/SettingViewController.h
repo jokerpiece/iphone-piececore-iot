@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *distanceLbl;
 @property (weak, nonatomic) IBOutlet UILabel *effDistanceLbl;
 @property (weak, nonatomic) IBOutlet UILabel *minlbl;
+@property (nonatomic) NSUInteger count;
+
 - (IBAction)closeAction:(id)sender;
 
 @end

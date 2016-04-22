@@ -13,6 +13,7 @@
 #import "SettingViewController.h"
 #import "infoViewController.h"
 #import "BLEConst.h"
+#import "LnitialMenuViewController.h"
 
 @interface SencorViewController ()
 
@@ -21,7 +22,9 @@
 @implementation SencorViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    [self setNavigationBarSetting];
     [self setBLEConnectorWithServiceUuid:JPSENSOR_SERVICE_UUID CharactoristicUuid:JPSENSOR_CHARACTORISTIC_UUID];
     //[self setCentlarManager];
     DistanceSencorData *data = [self loadSencorData];
@@ -46,6 +49,17 @@
     self.isDispedBatteryWarnig = NO;
     self.isDispedBackgroundWarnig = NO;
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)setNavigationBarSetting{
+    UIBarButtonItem *menu = [[UIBarButtonItem alloc]
+                             initWithTitle:@"メニュー"
+                             style:UIBarButtonItemStyleBordered
+                             target:self
+                             action:@selector(menuAction:)];
+    self.navigationItem.leftBarButtonItems = @[menu];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 }
 
 -(void)startScanWithTimer{
@@ -313,4 +327,14 @@
     self.distanceTotal = 0;
     [self startScanWithTimer];
 }
+
+-(void)menuAction:(id)sender
+{
+    LnitialMenuViewController *lmvc = [[LnitialMenuViewController alloc]init];
+    lmvc.parnentView = self;
+    //[self presentViewController:lmvc animated:YES completion:nil];
+    [self.navigationController pushViewController:lmvc animated:YES];
+}
+
+
 @end

@@ -7,9 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24FC6DD51CBF7CC500B8B793 /* LnitialMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6DD31CBF7CC500B8B793 /* LnitialMenuViewController.m */; };
+		24FC6DD61CBF7CC500B8B793 /* LnitialMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6DD41CBF7CC500B8B793 /* LnitialMenuViewController.xib */; };
+		24FC6DE61CC0A39000B8B793 /* ShippingAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6DE41CC0A39000B8B793 /* ShippingAddressViewController.m */; };
+		24FC6DE71CC0A39000B8B793 /* ShippingAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6DE51CC0A39000B8B793 /* ShippingAddressViewController.xib */; };
+		24FC6DFB1CC0BDA100B8B793 /* SelectRiceShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6DF91CC0BDA100B8B793 /* SelectRiceShopViewController.m */; };
+		24FC6DFC1CC0BDA100B8B793 /* SelectRiceShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6DFA1CC0BDA100B8B793 /* SelectRiceShopViewController.xib */; };
+		24FC6E001CC0BDFB00B8B793 /* SelectPayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6DFE1CC0BDFB00B8B793 /* SelectPayerViewController.m */; };
+		24FC6E011CC0BDFB00B8B793 /* SelectPayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6DFF1CC0BDFB00B8B793 /* SelectPayerViewController.xib */; };
+		24FC6E071CC0C34400B8B793 /* TutorialBatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E051CC0C34400B8B793 /* TutorialBatteryViewController.m */; };
+		24FC6E081CC0C34400B8B793 /* TutorialBatteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E061CC0C34400B8B793 /* TutorialBatteryViewController.xib */; };
+		24FC6E0C1CC0C36300B8B793 /* TutorialSettiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E0A1CC0C36300B8B793 /* TutorialSettiViewController.m */; };
+		24FC6E0D1CC0C36300B8B793 /* TutorialSettiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E0B1CC0C36300B8B793 /* TutorialSettiViewController.xib */; };
+		24FC6E181CC0D1F600B8B793 /* SendPaymentPermitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E161CC0D1F600B8B793 /* SendPaymentPermitViewController.m */; };
+		24FC6E191CC0D1F600B8B793 /* SendPaymentPermitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E171CC0D1F600B8B793 /* SendPaymentPermitViewController.xib */; };
+		24FC6E1E1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E1C1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m */; };
+		24FC6E1F1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E1D1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.xib */; };
+		24FC6E241CC49E4A00B8B793 /* ApprovalSettlementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E221CC49E4A00B8B793 /* ApprovalSettlementViewController.m */; };
+		24FC6E251CC49E4A00B8B793 /* ApprovalSettlementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E231CC49E4A00B8B793 /* ApprovalSettlementViewController.xib */; };
+		24FC6E2E1CC710D700B8B793 /* SettlementOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E2C1CC710D700B8B793 /* SettlementOthersViewController.m */; };
+		24FC6E2F1CC710D700B8B793 /* SettlementOthersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E2D1CC710D700B8B793 /* SettlementOthersViewController.xib */; };
+		24FC6E331CC7197A00B8B793 /* RiceSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E311CC7197900B8B793 /* RiceSelectTableViewCell.m */; };
+		24FC6E341CC7197A00B8B793 /* RiceSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E321CC7197900B8B793 /* RiceSelectTableViewCell.xib */; };
+		24FC6E431CC8960000B8B793 /* FindingTerumiIdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC6E411CC8960000B8B793 /* FindingTerumiIdViewController.m */; };
+		24FC6E441CC8960000B8B793 /* FindingTerumiIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E421CC8960000B8B793 /* FindingTerumiIdViewController.xib */; };
+		24FC6E471CC9B8DF00B8B793 /* menu_Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E451CC9B8DF00B8B793 /* menu_Preview.png */; };
+		24FC6E481CC9B8DF00B8B793 /* terumi_Id.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E461CC9B8DF00B8B793 /* terumi_Id.png */; };
 		3710329B1CA5198D00E76D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329A1CA5198D00E76D9A /* main.m */; };
 		3710329E1CA5198D00E76D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329D1CA5198D00E76D9A /* AppDelegate.m */; };
-		371032A41CA5198D00E76D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371032A21CA5198D00E76D9A /* Main.storyboard */; };
 		371032A61CA5198D00E76D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371032A51CA5198D00E76D9A /* Assets.xcassets */; };
 		371032A91CA5198D00E76D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */; };
 		371032B41CA5198D00E76D9A /* terumiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032B31CA5198D00E76D9A /* terumiTests.m */; };
@@ -99,11 +124,48 @@
 
 /* Begin PBXFileReference section */
 		15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		24FC6DD21CBF7CC500B8B793 /* LnitialMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LnitialMenuViewController.h; sourceTree = "<group>"; };
+		24FC6DD31CBF7CC500B8B793 /* LnitialMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LnitialMenuViewController.m; sourceTree = "<group>"; };
+		24FC6DD41CBF7CC500B8B793 /* LnitialMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LnitialMenuViewController.xib; sourceTree = "<group>"; };
+		24FC6DE31CC0A39000B8B793 /* ShippingAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingAddressViewController.h; sourceTree = "<group>"; };
+		24FC6DE41CC0A39000B8B793 /* ShippingAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingAddressViewController.m; sourceTree = "<group>"; };
+		24FC6DE51CC0A39000B8B793 /* ShippingAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShippingAddressViewController.xib; sourceTree = "<group>"; };
+		24FC6DF81CC0BDA100B8B793 /* SelectRiceShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRiceShopViewController.h; sourceTree = "<group>"; };
+		24FC6DF91CC0BDA100B8B793 /* SelectRiceShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRiceShopViewController.m; sourceTree = "<group>"; };
+		24FC6DFA1CC0BDA100B8B793 /* SelectRiceShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectRiceShopViewController.xib; sourceTree = "<group>"; };
+		24FC6DFD1CC0BDFB00B8B793 /* SelectPayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPayerViewController.h; sourceTree = "<group>"; };
+		24FC6DFE1CC0BDFB00B8B793 /* SelectPayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPayerViewController.m; sourceTree = "<group>"; };
+		24FC6DFF1CC0BDFB00B8B793 /* SelectPayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPayerViewController.xib; sourceTree = "<group>"; };
+		24FC6E041CC0C34400B8B793 /* TutorialBatteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialBatteryViewController.h; sourceTree = "<group>"; };
+		24FC6E051CC0C34400B8B793 /* TutorialBatteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialBatteryViewController.m; sourceTree = "<group>"; };
+		24FC6E061CC0C34400B8B793 /* TutorialBatteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialBatteryViewController.xib; sourceTree = "<group>"; };
+		24FC6E091CC0C36300B8B793 /* TutorialSettiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialSettiViewController.h; sourceTree = "<group>"; };
+		24FC6E0A1CC0C36300B8B793 /* TutorialSettiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialSettiViewController.m; sourceTree = "<group>"; };
+		24FC6E0B1CC0C36300B8B793 /* TutorialSettiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSettiViewController.xib; sourceTree = "<group>"; };
+		24FC6E151CC0D1F600B8B793 /* SendPaymentPermitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendPaymentPermitViewController.h; sourceTree = "<group>"; };
+		24FC6E161CC0D1F600B8B793 /* SendPaymentPermitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendPaymentPermitViewController.m; sourceTree = "<group>"; };
+		24FC6E171CC0D1F600B8B793 /* SendPaymentPermitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendPaymentPermitViewController.xib; sourceTree = "<group>"; };
+		24FC6E1B1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationTerumiIdViewController.h; sourceTree = "<group>"; };
+		24FC6E1C1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationTerumiIdViewController.m; sourceTree = "<group>"; };
+		24FC6E1D1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationTerumiIdViewController.xib; sourceTree = "<group>"; };
+		24FC6E211CC49E4A00B8B793 /* ApprovalSettlementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalSettlementViewController.h; sourceTree = "<group>"; };
+		24FC6E221CC49E4A00B8B793 /* ApprovalSettlementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalSettlementViewController.m; sourceTree = "<group>"; };
+		24FC6E231CC49E4A00B8B793 /* ApprovalSettlementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalSettlementViewController.xib; sourceTree = "<group>"; };
+		24FC6E2B1CC710D700B8B793 /* SettlementOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementOthersViewController.h; sourceTree = "<group>"; };
+		24FC6E2C1CC710D700B8B793 /* SettlementOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementOthersViewController.m; sourceTree = "<group>"; };
+		24FC6E2D1CC710D700B8B793 /* SettlementOthersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettlementOthersViewController.xib; sourceTree = "<group>"; };
+		24FC6E301CC7197900B8B793 /* RiceSelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiceSelectTableViewCell.h; sourceTree = "<group>"; };
+		24FC6E311CC7197900B8B793 /* RiceSelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiceSelectTableViewCell.m; sourceTree = "<group>"; };
+		24FC6E321CC7197900B8B793 /* RiceSelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RiceSelectTableViewCell.xib; sourceTree = "<group>"; };
+		24FC6E401CC8960000B8B793 /* FindingTerumiIdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindingTerumiIdViewController.h; path = terumi/ViewController/FindingTerumiIdViewController.h; sourceTree = SOURCE_ROOT; };
+		24FC6E411CC8960000B8B793 /* FindingTerumiIdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindingTerumiIdViewController.m; path = terumi/ViewController/FindingTerumiIdViewController.m; sourceTree = SOURCE_ROOT; };
+		24FC6E421CC8960000B8B793 /* FindingTerumiIdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FindingTerumiIdViewController.xib; path = terumi/ViewController/FindingTerumiIdViewController.xib; sourceTree = SOURCE_ROOT; };
+		24FC6E451CC9B8DF00B8B793 /* menu_Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_Preview.png; sourceTree = "<group>"; };
+		24FC6E461CC9B8DF00B8B793 /* terumi_Id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terumi_Id.png; sourceTree = "<group>"; };
 		371032961CA5198D00E76D9A /* terumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = terumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3710329A1CA5198D00E76D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3710329C1CA5198D00E76D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3710329D1CA5198D00E76D9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		371032A31CA5198D00E76D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		371032A51CA5198D00E76D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		371032A81CA5198D00E76D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		371032AA1CA5198D00E76D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,6 +281,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24FC6DD11CBF7C8900B8B793 /*  Initial */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6DD21CBF7CC500B8B793 /* LnitialMenuViewController.h */,
+				24FC6DD31CBF7CC500B8B793 /* LnitialMenuViewController.m */,
+				24FC6DD41CBF7CC500B8B793 /* LnitialMenuViewController.xib */,
+				24FC6E031CC0C30900B8B793 /* TutorialBattery */,
+				24FC6E021CC0C2E200B8B793 /* TutorialSetti */,
+			);
+			name = " Initial";
+			sourceTree = "<group>";
+		};
+		24FC6DD71CBF7D3D00B8B793 /* SelectRiceShop */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6DF81CC0BDA100B8B793 /* SelectRiceShopViewController.h */,
+				24FC6DF91CC0BDA100B8B793 /* SelectRiceShopViewController.m */,
+				24FC6DFA1CC0BDA100B8B793 /* SelectRiceShopViewController.xib */,
+			);
+			name = SelectRiceShop;
+			path = ../View;
+			sourceTree = "<group>";
+		};
+		24FC6DE21CC0A35A00B8B793 /* ShippingAddress */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6DE31CC0A39000B8B793 /* ShippingAddressViewController.h */,
+				24FC6DE41CC0A39000B8B793 /* ShippingAddressViewController.m */,
+				24FC6DE51CC0A39000B8B793 /* ShippingAddressViewController.xib */,
+			);
+			name = ShippingAddress;
+			sourceTree = "<group>";
+		};
+		24FC6DF41CC0A52C00B8B793 /* SelectPayer */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E401CC8960000B8B793 /* FindingTerumiIdViewController.h */,
+				24FC6E411CC8960000B8B793 /* FindingTerumiIdViewController.m */,
+				24FC6E421CC8960000B8B793 /* FindingTerumiIdViewController.xib */,
+				24FC6DFD1CC0BDFB00B8B793 /* SelectPayerViewController.h */,
+				24FC6DFE1CC0BDFB00B8B793 /* SelectPayerViewController.m */,
+				24FC6DFF1CC0BDFB00B8B793 /* SelectPayerViewController.xib */,
+			);
+			name = SelectPayer;
+			path = ../View;
+			sourceTree = "<group>";
+		};
+		24FC6E021CC0C2E200B8B793 /* TutorialSetti */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E091CC0C36300B8B793 /* TutorialSettiViewController.h */,
+				24FC6E0A1CC0C36300B8B793 /* TutorialSettiViewController.m */,
+				24FC6E0B1CC0C36300B8B793 /* TutorialSettiViewController.xib */,
+			);
+			name = TutorialSetti;
+			sourceTree = "<group>";
+		};
+		24FC6E031CC0C30900B8B793 /* TutorialBattery */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E041CC0C34400B8B793 /* TutorialBatteryViewController.h */,
+				24FC6E051CC0C34400B8B793 /* TutorialBatteryViewController.m */,
+				24FC6E061CC0C34400B8B793 /* TutorialBatteryViewController.xib */,
+			);
+			name = TutorialBattery;
+			sourceTree = "<group>";
+		};
+		24FC6E0E1CC0D15600B8B793 /* SendPaymentPermit */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E151CC0D1F600B8B793 /* SendPaymentPermitViewController.h */,
+				24FC6E161CC0D1F600B8B793 /* SendPaymentPermitViewController.m */,
+				24FC6E171CC0D1F600B8B793 /* SendPaymentPermitViewController.xib */,
+			);
+			name = SendPaymentPermit;
+			sourceTree = "<group>";
+		};
+		24FC6E1A1CC49D6900B8B793 /* ConfirmationTerumiId */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E1B1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.h */,
+				24FC6E1C1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m */,
+				24FC6E1D1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.xib */,
+			);
+			name = ConfirmationTerumiId;
+			sourceTree = "<group>";
+		};
+		24FC6E201CC49E1700B8B793 /* ApprovalSettlement */ = {
+			isa = PBXGroup;
+			children = (
+				24FC6E211CC49E4A00B8B793 /* ApprovalSettlementViewController.h */,
+				24FC6E221CC49E4A00B8B793 /* ApprovalSettlementViewController.m */,
+				24FC6E231CC49E4A00B8B793 /* ApprovalSettlementViewController.xib */,
+				24FC6E2B1CC710D700B8B793 /* SettlementOthersViewController.h */,
+				24FC6E2C1CC710D700B8B793 /* SettlementOthersViewController.m */,
+				24FC6E2D1CC710D700B8B793 /* SettlementOthersViewController.xib */,
+			);
+			name = ApprovalSettlement;
+			sourceTree = "<group>";
+		};
+		24FC6E351CC75BA600B8B793 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
 		3710328D1CA5198D00E76D9A = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +421,6 @@
 				371032D51CA51B5A00E76D9A /* ViewController */,
 				3710329C1CA5198D00E76D9A /* AppDelegate.h */,
 				3710329D1CA5198D00E76D9A /* AppDelegate.m */,
-				371032A21CA5198D00E76D9A /* Main.storyboard */,
 				371032A51CA5198D00E76D9A /* Assets.xcassets */,
 				371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */,
 				371032AA1CA5198D00E76D9A /* Info.plist */,
@@ -291,8 +459,12 @@
 		371032CC1CA51B5A00E76D9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24FC6E351CC75BA600B8B793 /* ProfileTableViewCell */,
 				371032CD1CA51B5A00E76D9A /* TutorialBattery */,
 				371032D11CA51B5A00E76D9A /* TutorialSetti */,
+				24FC6E301CC7197900B8B793 /* RiceSelectTableViewCell.h */,
+				24FC6E311CC7197900B8B793 /* RiceSelectTableViewCell.m */,
+				24FC6E321CC7197900B8B793 /* RiceSelectTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +492,13 @@
 		371032D51CA51B5A00E76D9A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				24FC6E201CC49E1700B8B793 /* ApprovalSettlement */,
+				24FC6E1A1CC49D6900B8B793 /* ConfirmationTerumiId */,
+				24FC6E0E1CC0D15600B8B793 /* SendPaymentPermit */,
+				24FC6DD11CBF7C8900B8B793 /*  Initial */,
+				24FC6DF41CC0A52C00B8B793 /* SelectPayer */,
+				24FC6DD71CBF7D3D00B8B793 /* SelectRiceShop */,
+				24FC6DE21CC0A35A00B8B793 /* ShippingAddress */,
 				371033181CA5318100E76D9A /* Base */,
 				371032DA1CA51B5A00E76D9A /* Info */,
 				371032DE1CA51B5A00E76D9A /* Menu */,
@@ -465,6 +644,8 @@
 		379FF7341CAA38F400883E8F /* Img */ = {
 			isa = PBXGroup;
 			children = (
+				24FC6E451CC9B8DF00B8B793 /* menu_Preview.png */,
+				24FC6E461CC9B8DF00B8B793 /* terumi_Id.png */,
 				379FF7351CAA38F400883E8F /* battery_tutorial1.jpg */,
 				379FF7361CAA38F400883E8F /* btn1.png */,
 				379FF7371CAA38F400883E8F /* btn2.png */,
@@ -597,9 +778,13 @@
 				TargetAttributes = {
 					371032951CA5198D00E76D9A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MCM25T6BXG;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
 							};
 						};
 					};
@@ -640,6 +825,7 @@
 			files = (
 				379FF7851CAA38F400883E8F /* yazirusi.jpg in Resources */,
 				379FF7771CAA38F400883E8F /* kometubu@2x.png in Resources */,
+				24FC6E081CC0C34400B8B793 /* TutorialBatteryViewController.xib in Resources */,
 				379FF77F1CAA38F400883E8F /* makimono.png in Resources */,
 				379FF7671CAA38F400883E8F /* icon@120.png in Resources */,
 				3710331F1CA53B1300E76D9A /* digital-7 (mono).ttf in Resources */,
@@ -648,15 +834,20 @@
 				379FF77D1CAA38F400883E8F /* komeya6.png in Resources */,
 				379FF7781CAA38F400883E8F /* komeya1.png in Resources */,
 				379FF7811CAA38F400883E8F /* menubg.png in Resources */,
+				24FC6DFC1CC0BDA100B8B793 /* SelectRiceShopViewController.xib in Resources */,
 				371032A91CA5198D00E76D9A /* LaunchScreen.storyboard in Resources */,
 				379FF7611CAA38F400883E8F /* btn3.png in Resources */,
 				371033001CA51B5A00E76D9A /* SettingViewController.xib in Resources */,
 				379FF7691CAA38F400883E8F /* icon@40.png in Resources */,
 				379FF7801CAA38F400883E8F /* marugaoa.png in Resources */,
+				24FC6E2F1CC710D700B8B793 /* SettlementOthersViewController.xib in Resources */,
 				379FF77B1CAA38F400883E8F /* komeya4.png in Resources */,
 				371033021CA51B5A00E76D9A /* SettlementViewController.xib in Resources */,
 				379FF7751CAA38F400883E8F /* kome7.png in Resources */,
+				24FC6E471CC9B8DF00B8B793 /* menu_Preview.png in Resources */,
+				24FC6E251CC49E4A00B8B793 /* ApprovalSettlementViewController.xib in Resources */,
 				379FF7661CAA38F400883E8F /* graff_back.png in Resources */,
+				24FC6DD61CBF7CC500B8B793 /* LnitialMenuViewController.xib in Resources */,
 				379FF7761CAA38F400883E8F /* kometubu.png in Resources */,
 				379FF7681CAA38F400883E8F /* icon@180.png in Resources */,
 				371032FE1CA51B5A00E76D9A /* SencorViewController.xib in Resources */,
@@ -673,23 +864,30 @@
 				379FF7831CAA38F400883E8F /* questionicon.png in Resources */,
 				379FF7861CAA38F400883E8F /* yazirusi.png in Resources */,
 				379FF76E1CAA38F400883E8F /* kiri.jpg in Resources */,
+				24FC6E481CC9B8DF00B8B793 /* terumi_Id.png in Resources */,
 				379FF7621CAA38F400883E8F /* btn4.png in Resources */,
 				379FF7651CAA38F400883E8F /* Default@2x.png in Resources */,
+				24FC6E441CC8960000B8B793 /* FindingTerumiIdViewController.xib in Resources */,
 				379FF7731CAA38F400883E8F /* kome5.png in Resources */,
+				24FC6DE71CC0A39000B8B793 /* ShippingAddressViewController.xib in Resources */,
 				379FF76B1CAA38F400883E8F /* icon@80.png in Resources */,
 				379FF7631CAA38F400883E8F /* Default-568h@2x.png in Resources */,
+				24FC6E191CC0D1F600B8B793 /* SendPaymentPermitViewController.xib in Resources */,
 				379FF7741CAA38F400883E8F /* kome6.png in Resources */,
 				379FF76F1CAA38F400883E8F /* kome1.png in Resources */,
 				379FF7711CAA38F400883E8F /* kome3.png in Resources */,
+				24FC6E341CC7197A00B8B793 /* RiceSelectTableViewCell.xib in Resources */,
+				24FC6E1F1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.xib in Resources */,
 				379FF76A1CAA38F400883E8F /* icon@58.png in Resources */,
 				379FF76D1CAA38F400883E8F /* images.jpg in Resources */,
-				371032A41CA5198D00E76D9A /* Main.storyboard in Resources */,
 				371032FA1CA51B5A00E76D9A /* MenuViewController.xib in Resources */,
+				24FC6E011CC0BDFB00B8B793 /* SelectPayerViewController.xib in Resources */,
 				379FF7701CAA38F400883E8F /* kome2.png in Resources */,
 				379FF75F1CAA38F400883E8F /* btn1.png in Resources */,
 				371032F51CA51B5A00E76D9A /* TutorialSettiView.xib in Resources */,
 				379FF7721CAA38F400883E8F /* kome4.png in Resources */,
 				371033201CA53B1300E76D9A /* 衡山毛筆フォント.ttf in Resources */,
+				24FC6E0D1CC0C36300B8B793 /* TutorialSettiViewController.xib in Resources */,
 				371032FC1CA51B5A00E76D9A /* SelectRiceViewController.xib in Resources */,
 				379FF7641CAA38F400883E8F /* Default.png in Resources */,
 			);
@@ -764,17 +962,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FC6E2E1CC710D700B8B793 /* SettlementOthersViewController.m in Sources */,
+				24FC6E431CC8960000B8B793 /* FindingTerumiIdViewController.m in Sources */,
 				371032F21CA51B5A00E76D9A /* TutorialBatteryView.m in Sources */,
+				24FC6DE61CC0A39000B8B793 /* ShippingAddressViewController.m in Sources */,
 				3710329E1CA5198D00E76D9A /* AppDelegate.m in Sources */,
+				24FC6DD51CBF7CC500B8B793 /* LnitialMenuViewController.m in Sources */,
 				371032F71CA51B5A00E76D9A /* infoViewController.m in Sources */,
+				24FC6E241CC49E4A00B8B793 /* ApprovalSettlementViewController.m in Sources */,
 				371033151CA51B8400E76D9A /* BLEConnector.m in Sources */,
 				371032FD1CA51B5A00E76D9A /* SencorViewController.m in Sources */,
 				371032F41CA51B5A00E76D9A /* TutorialSettiView.m in Sources */,
+				24FC6E331CC7197A00B8B793 /* RiceSelectTableViewCell.m in Sources */,
+				24FC6E0C1CC0C36300B8B793 /* TutorialSettiViewController.m in Sources */,
 				3710331B1CA531C800E76D9A /* BaseDistanceSencorViewController.m in Sources */,
+				24FC6E181CC0D1F600B8B793 /* SendPaymentPermitViewController.m in Sources */,
 				371033011CA51B5A00E76D9A /* SettlementViewController.m in Sources */,
 				371032F91CA51B5A00E76D9A /* MenuViewController.m in Sources */,
 				371033071CA51B6500E76D9A /* DistanceSencorData.m in Sources */,
 				371033161CA51B8400E76D9A /* BaseSencorViewController.m in Sources */,
+				24FC6DFB1CC0BDA100B8B793 /* SelectRiceShopViewController.m in Sources */,
+				24FC6E001CC0BDFB00B8B793 /* SelectPayerViewController.m in Sources */,
+				24FC6E071CC0C34400B8B793 /* TutorialBatteryViewController.m in Sources */,
+				24FC6E1E1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m in Sources */,
 				3710329B1CA5198D00E76D9A /* main.m in Sources */,
 				371032FB1CA51B5A00E76D9A /* SelectRiceViewController.m in Sources */,
 				371032FF1CA51B5A00E76D9A /* SettingViewController.m in Sources */,
@@ -813,14 +1023,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		371032A21CA5198D00E76D9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				371032A31CA5198D00E76D9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		371032A71CA5198D00E76D9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -918,12 +1120,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -933,12 +1138,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

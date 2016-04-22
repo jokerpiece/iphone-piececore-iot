@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShippingAddressViewController">
+            <connections>
+                <outlet property="onSignalTap" destination="yp6-mW-wZg" id="cQR-Rr-PLw"/>
+                <outlet property="phoneNumber" destination="7ij-kQ-Ar2" id="jXc-pE-aMT"/>
+                <outlet property="postCode" destination="WN0-sV-do1" id="C13-ME-r2F"/>
+                <outlet property="scroll" destination="HnK-wx-ZCm" id="iJf-wQ-Y3F"/>
+                <outlet property="searchPostCodeBtn" destination="4rz-4A-PYp" id="41z-ZV-ZVY"/>
+                <outlet property="streetAddress" destination="Agi-hs-boo" id="ICK-fF-JRm"/>
+                <outlet property="tapNextBtn" destination="j6Z-MI-Ttp" id="Jao-LL-ta2"/>
+                <outlet property="tapSkipBtn" destination="7Ir-Aq-O1D" id="7OY-v7-f1h"/>
+                <outlet property="userName" destination="AG6-pj-dQK" id="zEF-qe-kzl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="803"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="◉　◯　◯　◯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhX-Ya-EeL">
+                    <rect key="frame" x="10" y="65" width="300" height="48"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.44313725490196076" green="0.77647058823529413" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnK-wx-ZCm">
+                    <rect key="frame" x="10" y="112" width="300" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-zH-aOG">
+                            <rect key="frame" x="0.0" y="-9" width="300" height="639"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Agi-hs-boo">
+                                    <rect key="frame" x="18" y="175" width="261" height="95"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                </textView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ij-kQ-Ar2">
+                                    <rect key="frame" x="18" y="463" width="261" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ir-Aq-O1D">
+                                    <rect key="frame" x="12" y="572" width="130" height="30"/>
+                                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="スキップ">
+                                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="moveSelectPayer:" destination="-1" eventType="touchUpInside" id="QXa-A2-5SE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="郵便番号 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ju-1I-IsM">
+                                    <rect key="frame" x="31" y="48" width="73" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="氏名 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM2-pO-34e">
+                                    <rect key="frame" x="30" y="331" width="39" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="電話番号 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-jf-vp4">
+                                    <rect key="frame" x="30" y="434" width="73" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDY-8o-sgx">
+                                    <rect key="frame" x="20" y="49" width="3" height="18"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-sV-do1">
+                                    <rect key="frame" x="18" y="68" width="189" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-4A-PYp">
+                                    <rect key="frame" x="203" y="68" width="76" height="30"/>
+                                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="住所検索">
+                                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="searchPostCodeBtn:" destination="-1" eventType="touchUpInside" id="Qye-KN-eNd"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cX9-ym-Z9d">
+                                    <rect key="frame" x="20" y="154" width="3" height="18"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="住所 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-K8-Bcf">
+                                    <rect key="frame" x="30" y="152" width="39" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yi-8H-qtm">
+                                    <rect key="frame" x="20" y="333" width="3" height="18"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JgI-vU-vCJ">
+                                    <rect key="frame" x="20" y="440" width="3" height="18"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-LT-U1A">
+                                    <rect key="frame" x="15" y="124" width="276" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-dh-mDN">
+                                    <rect key="frame" x="15" y="305" width="276" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkU-aa-36g">
+                                    <rect key="frame" x="15" y="411" width="276" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6H-v5-NCP">
+                                    <rect key="frame" x="15" y="522" width="276" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AG6-pj-dQK">
+                                    <rect key="frame" x="20" y="351" width="259" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6Z-MI-Ttp">
+                                    <rect key="frame" x="161" y="572" width="130" height="30"/>
+                                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="次へ">
+                                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="moveSelectRiceShop:" destination="-1" eventType="touchUpInside" id="xzO-RR-YNV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="yp6-mW-wZg" appends="YES" id="YEb-Iy-jdg"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="92" y="572.5"/>
+        </view>
+        <tapGestureRecognizer id="yp6-mW-wZg">
+            <connections>
+                <action selector="onSignalTap:" destination="-1" id="wuF-ne-jN6"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

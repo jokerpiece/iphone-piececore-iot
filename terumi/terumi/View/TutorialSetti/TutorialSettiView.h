@@ -10,4 +10,6 @@
 
 @interface TutorialSettiView : UIView
 
++ (instancetype)setSettiView;
+
 @end
