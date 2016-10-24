@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "SelectRiceViewController.h"
-#import "SettingViewController.h"
+#import "SensorSettingViewController.h"
 #import "SencorViewController.h"
 #import <AudioToolbox/AudioServices.h>
 #import "LnitialMenuViewController.h"
@@ -30,8 +30,9 @@
 
 -(void)setConfig{
     //[self startScan:@"appdelagate"];
-    [PieceCoreConfig setShopId:@"otonagokoro"];
-    [PieceCoreConfig setAppKey:@"ba2b6159bfac1f3f22486b2c32a0b29d"];
+    [PieceCoreConfig setShopId:@"mylife"];
+    [PieceCoreConfig setLinePay:YES];
+    [PieceCoreConfig setLinePayConfirmUrl:@"terumi://linepay"];
     [PieceCoreConfig setAppId:@""];
     
     
@@ -117,7 +118,7 @@
                                                                tabTitle:@"Shopping"
                                                                   title:@"SHOPPING"]];
     [tabbarDataList addObject:[[TabbarData alloc]initWithViewController:
-                               [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil]
+                               [[SensorSettingViewController alloc] initWithNibName:@"SensorSettingViewController" bundle:nil]
                                                                 imgName:@"tab_icon_shopping.png"
                                                           selectImgName:@"tab_icon_shopping.png"
                                                                tabTitle:@"Shopping"
@@ -256,8 +257,8 @@
     //self.lnitiaMenuViewController = [[LnitialMenuViewController alloc]initWithNibName:@"LnitialMenuViewController" bundle:nil];
 
   //  self.rootController = [[UINavigationController alloc]initWithRootViewController:self.lnitiaMenuViewController];
-    self.lnitiaMenuViewController = [[LnitialMenuViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.lnitiaMenuViewController];
+    self.sencorViewController = [[SencorViewController alloc] initWithNibName:@"SencorViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.sencorViewController];
     
     self.window.rootViewController = navigationController;
     [self.window setRootViewController:navigationController];

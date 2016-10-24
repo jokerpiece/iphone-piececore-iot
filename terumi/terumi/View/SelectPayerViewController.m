@@ -9,7 +9,7 @@
 #import "SelectPayerViewController.h"
 #import <BaseViewController.h>
 #import "SendPaymentPermitViewController.h"
-#import "SettingViewController.h"
+#import "SensorSettingViewController.h"
 #import "LnitialMenuViewController.h"
 #import "FindingTerumiIdViewController.h"
 #import "SencorViewController.h"

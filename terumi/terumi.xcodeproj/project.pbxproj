@@ -33,6 +33,7 @@
 		24FC6E441CC8960000B8B793 /* FindingTerumiIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E421CC8960000B8B793 /* FindingTerumiIdViewController.xib */; };
 		24FC6E471CC9B8DF00B8B793 /* menu_Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E451CC9B8DF00B8B793 /* menu_Preview.png */; };
 		24FC6E481CC9B8DF00B8B793 /* terumi_Id.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FC6E461CC9B8DF00B8B793 /* terumi_Id.png */; };
+		2E80A0B34398F12472C1B44B /* libPods-terumi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BDC6B262548A8D0331DB15 /* libPods-terumi.a */; };
 		3710329B1CA5198D00E76D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329A1CA5198D00E76D9A /* main.m */; };
 		3710329E1CA5198D00E76D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710329D1CA5198D00E76D9A /* AppDelegate.m */; };
 		371032A61CA5198D00E76D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371032A51CA5198D00E76D9A /* Assets.xcassets */; };
@@ -51,8 +52,8 @@
 		371032FC1CA51B5A00E76D9A /* SelectRiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032E51CA51B5A00E76D9A /* SelectRiceViewController.xib */; };
 		371032FD1CA51B5A00E76D9A /* SencorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032E81CA51B5A00E76D9A /* SencorViewController.m */; };
 		371032FE1CA51B5A00E76D9A /* SencorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032E91CA51B5A00E76D9A /* SencorViewController.xib */; };
-		371032FF1CA51B5A00E76D9A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032EC1CA51B5A00E76D9A /* SettingViewController.m */; };
-		371033001CA51B5A00E76D9A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032ED1CA51B5A00E76D9A /* SettingViewController.xib */; };
+		371032FF1CA51B5A00E76D9A /* SensorSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032EC1CA51B5A00E76D9A /* SensorSettingViewController.m */; };
+		371033001CA51B5A00E76D9A /* SensorSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032ED1CA51B5A00E76D9A /* SensorSettingViewController.xib */; };
 		371033011CA51B5A00E76D9A /* SettlementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371032F01CA51B5A00E76D9A /* SettlementViewController.m */; };
 		371033021CA51B5A00E76D9A /* SettlementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371032F11CA51B5A00E76D9A /* SettlementViewController.xib */; };
 		371033071CA51B6500E76D9A /* DistanceSencorData.m in Sources */ = {isa = PBXBuildFile; fileRef = 371033061CA51B6500E76D9A /* DistanceSencorData.m */; };
@@ -102,7 +103,10 @@
 		379FF7841CAA38F400883E8F /* settingicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 379FF75B1CAA38F400883E8F /* settingicon.png */; };
 		379FF7851CAA38F400883E8F /* yazirusi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 379FF75C1CAA38F400883E8F /* yazirusi.jpg */; };
 		379FF7861CAA38F400883E8F /* yazirusi.png in Resources */ = {isa = PBXBuildFile; fileRef = 379FF75D1CAA38F400883E8F /* yazirusi.png */; };
-		FF7D41EC1E8B988C54797E26 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58EC1846DE112BE4F774258 /* libPods.a */; };
+		37B1D8911DBDDA590062BC61 /* SelectRiceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1D88C1DBDDA590062BC61 /* SelectRiceHeaderView.m */; };
+		37B1D8921DBDDA590062BC61 /* SelectRiceHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B1D88D1DBDDA590062BC61 /* SelectRiceHeaderView.xib */; };
+		37B1D8931DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1D88F1DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.m */; };
+		37B1D8941DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B1D8901DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BC8AA7288BA670E12823982 /* Pods-terumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-terumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-terumi/Pods-terumi.debug.xcconfig"; sourceTree = "<group>"; };
 		15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		24FC6DD21CBF7CC500B8B793 /* LnitialMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LnitialMenuViewController.h; sourceTree = "<group>"; };
 		24FC6DD31CBF7CC500B8B793 /* LnitialMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LnitialMenuViewController.m; sourceTree = "<group>"; };
@@ -193,9 +198,9 @@
 		371032E71CA51B5A00E76D9A /* SencorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SencorViewController.h; sourceTree = "<group>"; };
 		371032E81CA51B5A00E76D9A /* SencorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SencorViewController.m; sourceTree = "<group>"; };
 		371032E91CA51B5A00E76D9A /* SencorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SencorViewController.xib; sourceTree = "<group>"; };
-		371032EB1CA51B5A00E76D9A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		371032EC1CA51B5A00E76D9A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		371032ED1CA51B5A00E76D9A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		371032EB1CA51B5A00E76D9A /* SensorSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorSettingViewController.h; sourceTree = "<group>"; };
+		371032EC1CA51B5A00E76D9A /* SensorSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorSettingViewController.m; sourceTree = "<group>"; };
+		371032ED1CA51B5A00E76D9A /* SensorSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SensorSettingViewController.xib; sourceTree = "<group>"; };
 		371032EF1CA51B5A00E76D9A /* SettlementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettlementViewController.h; sourceTree = "<group>"; };
 		371032F01CA51B5A00E76D9A /* SettlementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettlementViewController.m; sourceTree = "<group>"; };
 		371032F11CA51B5A00E76D9A /* SettlementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettlementViewController.xib; sourceTree = "<group>"; };
@@ -251,8 +256,15 @@
 		379FF75B1CAA38F400883E8F /* settingicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingicon.png; sourceTree = "<group>"; };
 		379FF75C1CAA38F400883E8F /* yazirusi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yazirusi.jpg; sourceTree = "<group>"; };
 		379FF75D1CAA38F400883E8F /* yazirusi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yazirusi.png; sourceTree = "<group>"; };
+		37B1D88B1DBDDA590062BC61 /* SelectRiceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRiceHeaderView.h; sourceTree = "<group>"; };
+		37B1D88C1DBDDA590062BC61 /* SelectRiceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRiceHeaderView.m; sourceTree = "<group>"; };
+		37B1D88D1DBDDA590062BC61 /* SelectRiceHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectRiceHeaderView.xib; sourceTree = "<group>"; };
+		37B1D88E1DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRiceTableCellTableViewCell.h; sourceTree = "<group>"; };
+		37B1D88F1DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRiceTableCellTableViewCell.m; sourceTree = "<group>"; };
+		37B1D8901DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectRiceTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		87BDC6B262548A8D0331DB15 /* libPods-terumi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-terumi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		E58EC1846DE112BE4F774258 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19D13EA9321B575BA6068EA /* Pods-terumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-terumi.release.xcconfig"; path = "Pods/Target Support Files/Pods-terumi/Pods-terumi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF7D41EC1E8B988C54797E26 /* libPods.a in Frameworks */,
+				2E80A0B34398F12472C1B44B /* libPods-terumi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +545,12 @@
 		371032E21CA51B5A00E76D9A /* SelectRice */ = {
 			isa = PBXGroup;
 			children = (
+				37B1D88B1DBDDA590062BC61 /* SelectRiceHeaderView.h */,
+				37B1D88C1DBDDA590062BC61 /* SelectRiceHeaderView.m */,
+				37B1D88D1DBDDA590062BC61 /* SelectRiceHeaderView.xib */,
+				37B1D88E1DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.h */,
+				37B1D88F1DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.m */,
+				37B1D8901DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.xib */,
 				371032E31CA51B5A00E76D9A /* SelectRiceViewController.h */,
 				371032E41CA51B5A00E76D9A /* SelectRiceViewController.m */,
 				371032E51CA51B5A00E76D9A /* SelectRiceViewController.xib */,
@@ -553,9 +571,9 @@
 		371032EA1CA51B5A00E76D9A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				371032EB1CA51B5A00E76D9A /* SettingViewController.h */,
-				371032EC1CA51B5A00E76D9A /* SettingViewController.m */,
-				371032ED1CA51B5A00E76D9A /* SettingViewController.xib */,
+				371032EB1CA51B5A00E76D9A /* SensorSettingViewController.h */,
+				371032EC1CA51B5A00E76D9A /* SensorSettingViewController.m */,
+				371032ED1CA51B5A00E76D9A /* SensorSettingViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -694,7 +712,7 @@
 		385E1D7328207096617B30CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E58EC1846DE112BE4F774258 /* libPods.a */,
+				87BDC6B262548A8D0331DB15 /* libPods-terumi.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -704,6 +722,8 @@
 			children = (
 				15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */,
 				CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */,
+				0BC8AA7288BA670E12823982 /* Pods-terumi.debug.xcconfig */,
+				F19D13EA9321B575BA6068EA /* Pods-terumi.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -715,12 +735,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 371032C31CA5198D00E76D9A /* Build configuration list for PBXNativeTarget "terumi" */;
 			buildPhases = (
-				71120759B95E2606EF223679 /* Check Pods Manifest.lock */,
+				71120759B95E2606EF223679 /* [CP] Check Pods Manifest.lock */,
 				371032921CA5198D00E76D9A /* Sources */,
 				371032931CA5198D00E76D9A /* Frameworks */,
 				371032941CA5198D00E76D9A /* Resources */,
-				3F570D5A79B00E1DB050E9DA /* Embed Pods Frameworks */,
-				D5FD6471AF20B2AE62FA066B /* Copy Pods Resources */,
+				3F570D5A79B00E1DB050E9DA /* [CP] Embed Pods Frameworks */,
+				D5FD6471AF20B2AE62FA066B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -837,8 +857,9 @@
 				24FC6DFC1CC0BDA100B8B793 /* SelectRiceShopViewController.xib in Resources */,
 				371032A91CA5198D00E76D9A /* LaunchScreen.storyboard in Resources */,
 				379FF7611CAA38F400883E8F /* btn3.png in Resources */,
-				371033001CA51B5A00E76D9A /* SettingViewController.xib in Resources */,
+				371033001CA51B5A00E76D9A /* SensorSettingViewController.xib in Resources */,
 				379FF7691CAA38F400883E8F /* icon@40.png in Resources */,
+				37B1D8921DBDDA590062BC61 /* SelectRiceHeaderView.xib in Resources */,
 				379FF7801CAA38F400883E8F /* marugaoa.png in Resources */,
 				24FC6E2F1CC710D700B8B793 /* SettlementOthersViewController.xib in Resources */,
 				379FF77B1CAA38F400883E8F /* komeya4.png in Resources */,
@@ -881,6 +902,7 @@
 				379FF76A1CAA38F400883E8F /* icon@58.png in Resources */,
 				379FF76D1CAA38F400883E8F /* images.jpg in Resources */,
 				371032FA1CA51B5A00E76D9A /* MenuViewController.xib in Resources */,
+				37B1D8941DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.xib in Resources */,
 				24FC6E011CC0BDFB00B8B793 /* SelectPayerViewController.xib in Resources */,
 				379FF7701CAA38F400883E8F /* kome2.png in Resources */,
 				379FF75F1CAA38F400883E8F /* btn1.png in Resources */,
@@ -910,29 +932,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F570D5A79B00E1DB050E9DA /* Embed Pods Frameworks */ = {
+		3F570D5A79B00E1DB050E9DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-terumi/Pods-terumi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71120759B95E2606EF223679 /* Check Pods Manifest.lock */ = {
+		71120759B95E2606EF223679 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -940,19 +962,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D5FD6471AF20B2AE62FA066B /* Copy Pods Resources */ = {
+		D5FD6471AF20B2AE62FA066B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-terumi/Pods-terumi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -979,7 +1001,9 @@
 				24FC6E181CC0D1F600B8B793 /* SendPaymentPermitViewController.m in Sources */,
 				371033011CA51B5A00E76D9A /* SettlementViewController.m in Sources */,
 				371032F91CA51B5A00E76D9A /* MenuViewController.m in Sources */,
+				37B1D8911DBDDA590062BC61 /* SelectRiceHeaderView.m in Sources */,
 				371033071CA51B6500E76D9A /* DistanceSencorData.m in Sources */,
+				37B1D8931DBDDA590062BC61 /* SelectRiceTableCellTableViewCell.m in Sources */,
 				371033161CA51B8400E76D9A /* BaseSencorViewController.m in Sources */,
 				24FC6DFB1CC0BDA100B8B793 /* SelectRiceShopViewController.m in Sources */,
 				24FC6E001CC0BDFB00B8B793 /* SelectPayerViewController.m in Sources */,
@@ -987,7 +1011,7 @@
 				24FC6E1E1CC49E0200B8B793 /* ConfirmationTerumiIdViewController.m in Sources */,
 				3710329B1CA5198D00E76D9A /* main.m in Sources */,
 				371032FB1CA51B5A00E76D9A /* SelectRiceViewController.m in Sources */,
-				371032FF1CA51B5A00E76D9A /* SettingViewController.m in Sources */,
+				371032FF1CA51B5A00E76D9A /* SensorSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1116,7 +1140,7 @@
 		};
 		371032C41CA5198D00E76D9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15B73E07C2EAC29B1255931F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0BC8AA7288BA670E12823982 /* Pods-terumi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1134,7 +1158,7 @@
 		};
 		371032C51CA5198D00E76D9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC7197255BEB3CD8EFE57DC9 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F19D13EA9321B575BA6068EA /* Pods-terumi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

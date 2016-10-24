@@ -7,7 +7,7 @@
 //
 
 #import "SendPaymentPermitViewController.h"
-#import "SettingViewController.h"
+#import "SensorSettingViewController.h"
 #import "SencorViewController.h"
 
 @interface SendPaymentPermitViewController ()

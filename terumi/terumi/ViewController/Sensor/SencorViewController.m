@@ -10,7 +10,7 @@
 #import "SVProgressHUD.h"
 #import "SettlementViewController.h"
 #import "SelectRiceViewController.h"
-#import "SettingViewController.h"
+#import "SensorSettingViewController.h"
 #import "infoViewController.h"
 #import "BLEConst.h"
 #import "LnitialMenuViewController.h"
@@ -22,45 +22,55 @@
 @implementation SencorViewController
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    [self setNavigationBarSetting];
     [self setBLEConnectorWithServiceUuid:JPSENSOR_SERVICE_UUID CharactoristicUuid:JPSENSOR_CHARACTORISTIC_UUID];
     //[self setCentlarManager];
+    
+    
+    
+    // Do any additional setup after loading the view from its nib.
+}
+-(void)viewDidAppearLogic{
+    
     DistanceSencorData *data = [self loadSencorData];
     
     if (data.minDistance == 0 &&
         data.maxDistance == 0) {
-        SettingViewController *vc = [[SettingViewController alloc]init];
+        SensorSettingViewController *vc = [[SensorSettingViewController alloc]init];
         vc.parnentView = self;
+        
+        self.distanceTotal = 0;
+        self.orderView.alpha = 0;
+        self.maskView.alpha = 0;
+        
+        self.isDispedWarnig = NO;
+        self.isDispedBatteryWarnig = NO;
+        self.isDispedBackgroundWarnig = NO;
+        
         [self presentViewController:vc animated:YES completion:nil];
     } else {
-        self.sencorData = [self loadSencorData];
-        //        [self startScan:@"sencor"];
-        self.distanceTotal = 0;
-        [self startScanWithTimer];
+        if (self.isNoReload) {
+            self.isNoReload = NO;
+        } else {
+            self.sencorData = [self loadSencorData];
+            //        [self startScan:@"sencor"];
+            self.distanceTotal = 0;
+            self.orderView.alpha = 0;
+            self.maskView.alpha = 0;
+            
+            self.isDispedWarnig = NO;
+            self.isDispedBatteryWarnig = NO;
+            self.isDispedBackgroundWarnig = NO;
+            [self startScanWithTimer];
+        }
+        
+        
         
     }
     
-    self.orderView.alpha = 0;
-    self.maskView.alpha = 0;
     
-    self.isDispedWarnig = NO;
-    self.isDispedBatteryWarnig = NO;
-    self.isDispedBackgroundWarnig = NO;
-    // Do any additional setup after loading the view from its nib.
 }
 
--(void)setNavigationBarSetting{
-    UIBarButtonItem *menu = [[UIBarButtonItem alloc]
-                             initWithTitle:@"メニュー"
-                             style:UIBarButtonItemStyleBordered
-                             target:self
-                             action:@selector(menuAction:)];
-    self.navigationItem.leftBarButtonItems = @[menu];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-
-}
 
 -(void)startScanWithTimer{
     
@@ -99,9 +109,13 @@
 -(void)updateAction{
     
     if (self.totalSeachCount >= SERACH_COUNT) {
-        [self cancelPeripheralConnection];
+        [SVProgressHUD dismiss];
+        //[self cancelPeripheralConnection];
         
         self.remaingLbl.text = [NSString stringWithFormat:@"%d%%",[self getRemaining:self.distanceTotal / self.effectSeachCount]];
+        self.distanceTotal = 0;
+        self.effectSeachCount = 0;
+        self.totalSeachCount = 0;
         
     } else {
         self.totalSeachCount ++;
@@ -310,7 +324,7 @@
     
     [self cancelPeripheralConnection];
     [self stopTimer];
-    SettingViewController *vc = [[SettingViewController alloc]init];
+    SensorSettingViewController *vc = [[SensorSettingViewController alloc]init];
     vc.parnentView = self;
     [self presentViewController:vc animated:YES completion:nil];
 }

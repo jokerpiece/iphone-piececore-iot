@@ -108,7 +108,7 @@
     [self.retryTimer invalidate];
     self.retryTimer = nil;
     NSLog(@"peripheral：%@", peripheral);
-    if ([peripheral.name hasPrefix:@"AppsJPSensor"]) {
+    if ([peripheral.name hasPrefix:@"JPSns"]) {
         self.peripheral = peripheral;
         
         [self.centralManager connectPeripheral:self.peripheral options:nil];

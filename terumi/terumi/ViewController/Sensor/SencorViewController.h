@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *orderView;
 @property (weak, nonatomic) IBOutlet UIView *maskView;
 @property (weak, nonatomic) IBOutlet UILabel *orderRemaingLbl;
+@property (nonatomic) bool isNoReload;
 @property (nonatomic) int distanceTotal;
 - (IBAction)onNomalRice:(id)sender;
 - (IBAction)onOtherRice:(id)sender;

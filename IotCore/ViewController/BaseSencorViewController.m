@@ -29,10 +29,13 @@
 -(void)startScanWithIdentifer:(NSString*)identifer retryTime:(float)retryTime retryCount:(int)retryCount{
     //DLog(@"startscan:%@",identifer);
     
-    
+    [SVProgressHUD showWithStatus:@"接続中" maskType:SVProgressHUDMaskTypeBlack];
     [self.ble startScanWithIdentifer:identifer retryTimer:retryTime retryCount:retryCount];
     
     
+}
+
+-(void)startScanWithTimer{
 }
 
 -(void)updateActionWithData:(NSData *)data{
@@ -55,8 +58,34 @@
 }
 
 -(void)fieldActionWithBLEErrType:(BLEErrType *)errType{
+    [self.ble cancelPeripheralConnection];
+    [SVProgressHUD dismiss];
+    UIAlertView *alert =
+    [[UIAlertView alloc]
+     initWithTitle:@"エラー"
+     message:@"センサーとの接続ができませんでした。"
+     delegate:nil
+     cancelButtonTitle:@"キャンセル"
+     otherButtonTitles:@"再接続", nil
+     ];
+    alert.delegate = self;
+    [alert show];
+    
     
 }
+
+-(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0:
+            // cancelボタンが押された時の処理
+            break;
+        case 1:
+            // otherボタンが押されたときの処理
+            [self startScanWithTimer];
+            break;
+    }
+}
+
 /*
  #pragma mark - Navigation
  
