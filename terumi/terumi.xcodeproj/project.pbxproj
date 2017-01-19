@@ -799,6 +799,7 @@
 					371032951CA5198D00E76D9A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = MCM25T6BXG;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1145,14 +1146,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = MCM25T6BXG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.mylife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9fe56d8d-a0ea-4e25-9c1a-c7b22a22ebb2";
+				PROVISIONING_PROFILE_SPECIFIER = myeline_Distribution;
 			};
 			name = Debug;
 		};
@@ -1163,14 +1166,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = MCM25T6BXG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.terumi;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.mylife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9fe56d8d-a0ea-4e25-9c1a-c7b22a22ebb2";
+				PROVISIONING_PROFILE_SPECIFIER = myeline_Distribution;
 			};
 			name = Release;
 		};

@@ -1,2 +1,4 @@
-platform:ios, 8.0
+platform :ios,'8.0'
+target "terumi" do 
 pod 'PieceCore', :git => 'https://github.com/jokerpiece/PieceCore.git'
+end

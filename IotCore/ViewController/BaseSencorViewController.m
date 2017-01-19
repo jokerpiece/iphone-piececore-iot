@@ -69,7 +69,7 @@
      otherButtonTitles:@"再接続", nil
      ];
     alert.delegate = self;
-    [alert show];
+//    [alert show];
     
     
 }

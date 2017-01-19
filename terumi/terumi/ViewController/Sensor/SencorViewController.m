@@ -67,7 +67,14 @@
         
         
     }
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *pid =[ud stringForKey:@"BUY_PID"];
     
+    if ([Common isNotEmptyString:pid]) {
+        self.orderBtn.alpha = 1;
+    } else {
+        self.orderBtn.alpha = 0;
+    }
     
 }
 
@@ -162,6 +169,7 @@
         self.frame1View.backgroundColor = [UIColor colorWithRed:0.00 green:0.00 blue:0.80 alpha:1.0];
         self.frame2View.backgroundColor =[UIColor colorWithRed:0.00 green:0.00 blue:0.55 alpha:1.0];
         self.frame3View.backgroundColor = [UIColor colorWithRed:0.12 green:0.56 blue:1.00 alpha:1.0];
+        self.alertMessage.text = @"";
         self.orderRemaingLbl.text = [NSString stringWithFormat:@"100%%"];
         return 100;
     } else if (splitDistance * 3 < distance - self.sencorData.minDistance){
@@ -180,6 +188,7 @@
         self.frame1View.backgroundColor = [UIColor colorWithRed:0.00 green:0.55 blue:0.55 alpha:1.0];
         self.frame2View.backgroundColor =[UIColor colorWithRed:0.00 green:0.00 blue:0.55 alpha:1.0];
         self.frame3View.backgroundColor = [UIColor colorWithRed:0.00 green:1.00 blue:0.50 alpha:1.0];
+        self.alertMessage.text = @"";
         self.orderRemaingLbl.text = [NSString stringWithFormat:@"75%%"];
         return 75;
     } else if (splitDistance * 2 < distance- self.sencorData.minDistance){
@@ -198,6 +207,7 @@
         self.frame1View.backgroundColor = [UIColor colorWithRed:0.00 green:0.55 blue:0.55 alpha:1.0];
         self.frame2View.backgroundColor =[UIColor colorWithRed:0.20 green:0.80 blue:0.20 alpha:1.0];
         self.frame3View.backgroundColor = [UIColor colorWithRed:0.68 green:1.00 blue:0.18 alpha:1.0];
+        self.alertMessage.text = @"";
         self.orderRemaingLbl.text = [NSString stringWithFormat:@"50%%"];
         return 50;
     } else if (splitDistance <distance- self.sencorData.minDistance) {
@@ -217,6 +227,7 @@
         self.frame2View.backgroundColor =[UIColor colorWithRed:1.00 green:0.55 blue:0.00 alpha:1.0];
         self.frame3View.backgroundColor = [UIColor colorWithRed:0.96 green:0.64 blue:0.38 alpha:1.0];
         self.orderRemaingLbl.text = [NSString stringWithFormat:@"25%%"];
+        self.alertMessage.text = @"もう少しでお米がなくなります。\n注文しておきますか？";
         [self dispWarning];
         
         
@@ -238,6 +249,7 @@
         self.frame2View.backgroundColor =[UIColor colorWithRed:1.00 green:0.55 blue:0.00 alpha:1.0];
         self.frame3View.backgroundColor = [UIColor colorWithRed:1.00 green:0.71 blue:0.76 alpha:1.0];
         self.orderRemaingLbl.text = [NSString stringWithFormat:@"0%%"];
+        self.alertMessage.text = @"もう少しでお米がなくなります。\n注文しておきますか？";
         [self dispWarning];
         
         return 0;
@@ -254,6 +266,18 @@
         if (self.isDispedWarnig) {
             return;
         }
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        NSString *pid =[ud stringForKey:@"BUY_PID"];
+        
+        if ([Common isNotEmptyString:pid]) {
+            NetworkConecter *conector = [NetworkConecter alloc];
+            conector.delegate = self;
+            NSMutableDictionary *param = [NSMutableDictionary dictionary];
+            [param setValue:pid forKey:@"item_id"];
+            [conector sendActionSendId:SendIdItem param:param];
+        }
+        
+        self.isDispDeliverPushed = YES;
         self.orderView.alpha = 1.0;
         self.maskView.alpha = 0.5;
         self.isDispedWarnig = YES;
@@ -295,13 +319,25 @@
 }
 
 - (IBAction)orderAction:(id)sender {
-    [SVProgressHUD showWithStatus:@"決済処理中・・・" maskType:SVProgressHUDMaskTypeBlack];
-    [self performSelector:@selector(complete) withObject:nil afterDelay:3.0];
+//    [SVProgressHUD showWithStatus:@"決済処理中・・・" maskType:SVProgressHUDMaskTypeBlack];
+//    [self performSelector:@selector(complete) withObject:nil afterDelay:3.0];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *pid =[ud stringForKey:@"BUY_PID"];
+    
+    if ([Common isNotEmptyString:pid]) {
+        NetworkConecter *conector = [NetworkConecter alloc];
+        conector.delegate = self;
+        NSMutableDictionary *param = [NSMutableDictionary dictionary];
+        [param setValue:pid forKey:@"item_id"];
+        [conector sendActionSendId:SendIdItem param:param];
+    }
     
 }
 
 - (IBAction)otherAction:(id)sender {
-    [self.navigationController pushViewController:[[SelectRiceViewController alloc]init] animated:YES];
+    FlyerViewController *fv=[[FlyerViewController alloc] initWithNibName:@"FlyerViewController" bundle:nil];
+    fv.isSearchBtnInvisible = YES;
+    [self.navigationController pushViewController:fv animated:YES];
 }
 
 -(void)complete {
@@ -316,6 +352,17 @@
 }
 
 - (IBAction)deliveryAction:(id)sender {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *pid =[ud stringForKey:@"BUY_PID"];
+    
+    if ([Common isNotEmptyString:pid]) {
+        self.isDispDeliverPushed = YES;
+        NetworkConecter *conector = [NetworkConecter alloc];
+        conector.delegate = self;
+        NSMutableDictionary *param = [NSMutableDictionary dictionary];
+        [param setValue:pid forKey:@"item_id"];
+        [conector sendActionSendId:SendIdItem param:param];
+    }
     self.orderView.alpha = 1;
     self.maskView.alpha = 0.5;
 }
@@ -350,5 +397,52 @@
     [self.navigationController pushViewController:lmvc animated:YES];
 }
 
+-(void)syncItemdataAction{
+    NetworkConecter *conector = [NetworkConecter alloc];
+    conector.delegate = self;
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    [param setValue:self.itemId forKey:@"item_id"];
+    [conector sendActionSendId:SendIdItem param:param];
+}
+
+
+-(void)setDataWithRecipient:(BaseRecipient *)recipient sendId:(NSString *)sendId{
+    
+    if([sendId isEqualToString:SendIdItem]){
+        self.itemRecipient = (ItemRecipient *)recipient;
+        NSArray *itemList = [self.itemRecipient.resultset objectForKey:@"itemLists"];
+        
+        if(itemList.firstObject != NULL){
+            
+            if (self.isDispDeliverPushed) {
+                self.isDispDeliverPushed = NO;
+                [self.komeIv setImageWithURL:itemList[0][@"img_url"] placeholderImage:nil options:SDWebImageCacheMemoryOnly usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+                self.komeLbl.text = itemList[0][@"item_name"];
+            } else {
+                linepay_ViewController *lvc = [[linepay_ViewController alloc]
+                                               initWithNibName:@"linepay_ViewController" bundle:nil];
+                lvc.itemName = itemList[0][@"item_name"];
+                lvc.productId = itemList[0][@"item_id"];
+                lvc.imgUrl = itemList[0][@"img_url"];
+                lvc.itemText = itemList[0][@"text"];
+                lvc.itemPrice = itemList[0][@"price"];
+                lvc.itemStock = itemList[0][@"stocks"];
+                
+                [self.navigationController pushViewController:lvc animated:YES];
+            }
+            
+        }
+        
+    }
+    
+}
+
+-(BaseRecipient *)getDataWithSendId:(NSString *)sendId{
+    if([sendId isEqualToString:SendIdItem]){
+        return [ItemRecipient alloc];
+    } else {
+        return [BaseRecipient alloc];
+    }
+}
 
 @end

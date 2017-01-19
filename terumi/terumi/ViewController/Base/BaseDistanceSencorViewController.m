@@ -18,7 +18,7 @@
     self.humidity = reportData[4] * 100/256;
     DLog(@"--------------");
     DLog(@"距離:%d",self.distance);
-//    DLog(@"電池:%d",self.battery);
+    DLog(@"電池:%d",self.battery);
 //    DLog(@"温度:%d",self.temperature);
 //    DLog(@"湿度:%d",self.humidity);
     

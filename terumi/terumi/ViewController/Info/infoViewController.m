@@ -14,15 +14,32 @@
 
 @implementation infoViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    // UIWebViewのインスタンス初期化
+//    self.webview = [[UIWebView alloc]init];
+//    
+//    // デリゲート
+//    self.webView.delegate = self;
+    
+    // Webページの大きさを画面に合わせる
+//    CGRect rect = self.view.frame;
+//    webView.frame = rect;
+//    webView.scalesPageToFit = YES;
+//    
+//    // インスタンスをビューに追加する
+//    [self.view addSubview:webView];
+    
+    // URLを指定
+    NSURL *url = [NSURL URLWithString:@"http://jokapi.jp/pieceContents/mylife/credit.html"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    // リクエストを投げる
+    [self.webview loadRequest:request];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (IBAction)closeAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
         [self.parnentView settinged];

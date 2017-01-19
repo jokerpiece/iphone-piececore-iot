@@ -30,6 +30,9 @@
 
 -(void)setConfig{
     //[self startScan:@"appdelagate"];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
+    [ud setInteger:1 forKey:@"LINEPAY"];
+    
     [PieceCoreConfig setShopId:@"mylife"];
     [PieceCoreConfig setLinePay:YES];
     [PieceCoreConfig setLinePayConfirmUrl:@"terumi://linepay"];
@@ -117,12 +120,7 @@
                                                           selectImgName:@"tab_icon_shopping.png"
                                                                tabTitle:@"Shopping"
                                                                   title:@"SHOPPING"]];
-    [tabbarDataList addObject:[[TabbarData alloc]initWithViewController:
-                               [[SensorSettingViewController alloc] initWithNibName:@"SensorSettingViewController" bundle:nil]
-                                                                imgName:@"tab_icon_shopping.png"
-                                                          selectImgName:@"tab_icon_shopping.png"
-                                                               tabTitle:@"Shopping"
-                                                                  title:@"SHOPPING"]];
+    
     return tabbarDataList;
 }
 
@@ -239,34 +237,35 @@
 //
 //
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    // Push通知の許可画面を表示させる
-    UIUserNotificationType types = UIUserNotificationTypeBadge |
-    UIUserNotificationTypeSound |
-    UIUserNotificationTypeAlert;
-    UIUserNotificationSettings *mySettings =
-    [UIUserNotificationSettings settingsForTypes:types categories:nil];
-    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
-    
-    //リモートPush通知を受信するためのdeviceTokenを要求
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
-    
-    //[self setTabBarController];
-    self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //self.lnitiaMenuViewController = [[LnitialMenuViewController alloc]initWithNibName:@"LnitialMenuViewController" bundle:nil];
-
-  //  self.rootController = [[UINavigationController alloc]initWithRootViewController:self.lnitiaMenuViewController];
-    self.sencorViewController = [[SencorViewController alloc] initWithNibName:@"SencorViewController" bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.sencorViewController];
-    
-    self.window.rootViewController = navigationController;
-    [self.window setRootViewController:navigationController];
-    [self.window makeKeyAndVisible];
-
-    
-    return YES;
-}
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    // Override point for customization after application launch.
+//    // Push通知の許可画面を表示させる
+//    [self setConfig];
+//    UIUserNotificationType types = UIUserNotificationTypeBadge |
+//    UIUserNotificationTypeSound |
+//    UIUserNotificationTypeAlert;
+//    UIUserNotificationSettings *mySettings =
+//    [UIUserNotificationSettings settingsForTypes:types categories:nil];
+//    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+//    
+//    //リモートPush通知を受信するためのdeviceTokenを要求
+//    [[UIApplication sharedApplication] registerForRemoteNotifications];
+//    
+//    //[self setTabBarController];
+//    self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    //self.lnitiaMenuViewController = [[LnitialMenuViewController alloc]initWithNibName:@"LnitialMenuViewController" bundle:nil];
+//
+//  //  self.rootController = [[UINavigationController alloc]initWithRootViewController:self.lnitiaMenuViewController];
+//    self.sencorViewController = [[SencorViewController alloc] initWithNibName:@"SencorViewController" bundle:nil];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.sencorViewController];
+//    
+//    self.window.rootViewController = navigationController;
+//    [self.window setRootViewController:navigationController];
+//    [self.window makeKeyAndVisible];
+//
+//    
+//    return YES;
+//}
 
 
 // DeviceToken受信成功
@@ -305,5 +304,10 @@
     
 }
 
-
+-(void)setPieceTitle{
+    TitleNameData *titleName = [[TitleNameData alloc]initForaPafeCodeDefault];
+    titleName.flyerTitle = @"お米の選択";
+    titleName.webViewTitle = @"商品のご紹介";
+    [PieceCoreConfig setTitleNameData:titleName];
+}
 @end

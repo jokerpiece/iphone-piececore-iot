@@ -9,6 +9,7 @@
 #import "BaseSencorViewController.h"
 #import "SencorViewController.h"
 
-@interface infoViewController : BaseViewController
+@interface infoViewController : UIViewController<UIWebViewDelegate>
 @property (nonatomic) SencorViewController *parnentView;
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
 @end

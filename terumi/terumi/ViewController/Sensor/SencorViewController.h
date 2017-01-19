@@ -8,6 +8,8 @@
 
 #import "BaseDistanceSencorViewController.h"
 #import "RoundView.h"
+#import "linepay_ViewController.h"
+#import "LinePayData.h"
 
 @interface SencorViewController : BaseDistanceSencorViewController
 @property (weak, nonatomic) IBOutlet UIView *orderView;
@@ -15,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *orderRemaingLbl;
 @property (nonatomic) bool isNoReload;
 @property (nonatomic) int distanceTotal;
+@property (strong, nonatomic) ItemRecipient *itemRecipient;
+@property (strong, nonatomic) ItemData *itemData;
 - (IBAction)onNomalRice:(id)sender;
 - (IBAction)onOtherRice:(id)sender;
 - (IBAction)closeAction:(id)sender;
@@ -32,6 +36,8 @@
 @property (nonatomic) bool isDispedBackgroundWarnig;
 @property (nonatomic) bool isDispedBatteryWarnig;
 @property (nonatomic) NSTimer *timer;
+@property (strong, nonatomic) NSString *itemId;
+@property (weak, nonatomic) IBOutlet UIButton *orderBtn;
 
 @property (weak, nonatomic) IBOutlet RoundView *graff1;
 @property (weak, nonatomic) IBOutlet RoundView *graff2;
@@ -44,6 +50,8 @@
 @property (weak, nonatomic) IBOutlet RoundView *graff9;
 @property (weak, nonatomic) IBOutlet RoundView *graff10;
 @property (weak, nonatomic) IBOutlet RoundView *graff11;
+@property (weak, nonatomic) IBOutlet UILabel *alertMessage;
+@property (nonatomic) bool isDispDeliverPushed;
 
 - (IBAction)deliveryAction:(id)sender;
 - (IBAction)settingAction:(id)sender;
