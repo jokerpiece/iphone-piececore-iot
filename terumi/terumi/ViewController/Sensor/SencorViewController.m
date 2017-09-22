@@ -14,6 +14,7 @@
 #import "infoViewController.h"
 #import "BLEConst.h"
 #import "LnitialMenuViewController.h"
+#import "CutomFlyerViewController.h"
 
 @interface SencorViewController ()
 
@@ -23,12 +24,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tabBarController.tabBar.hidden = YES;
+    self.hidesBottomBarWhenPushed = YES;
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"tab_icon_shopping.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                            style:UIBarButtonItemStylePlain
+                                                           target:self
+                                                           action:@selector(moveFlyer)];
+    
+    self.navigationItem.leftBarButtonItem = btn;
+    
     [self setBLEConnectorWithServiceUuid:JPSENSOR_SERVICE_UUID CharactoristicUuid:JPSENSOR_CHARACTORISTIC_UUID];
     //[self setCentlarManager];
     
     
     
     // Do any additional setup after loading the view from its nib.
+}
+-(void)moveFlyer{
+    // ① 2番目のタブのViewControllerを取得する
+    UINavigationController *navigationC = self.tabBarController.viewControllers[0];
+    // ② 2番目のタブを選択済みにする
+    self.tabBarController.selectedViewController = navigationC;
+    // ③ UINavigationControllerに追加済みのViewを一旦取り除く
+    [navigationC popToRootViewControllerAnimated:NO];
+//    // ④ SecondViewの画面遷移処理を呼び出す
+//    CutomFlyerViewController *vc = [[CutomFlyerViewController alloc] initWithNibName:@"CutomFlyerViewController" bundle:nil];
+//    [navigationC pushViewController:vc animated:YES];
 }
 -(void)viewDidAppearLogic{
     

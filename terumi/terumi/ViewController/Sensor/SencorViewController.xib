@@ -185,7 +185,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9J-dt-nv0">
-                    <rect key="frame" x="283" y="466" width="33" height="21"/>
+                    <rect key="frame" x="283" y="464" width="33" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
                     <color key="textColor" red="0.9949270486831665" green="0.9899754524230957" blue="0.99009978771209717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

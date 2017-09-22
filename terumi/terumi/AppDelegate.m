@@ -14,6 +14,7 @@
 #import <AudioToolbox/AudioServices.h>
 #import "LnitialMenuViewController.h"
 #import "ApprovalSettlementViewController.h"
+#import "CutomFlyerViewController.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) SencorViewController *sencorViewController;
@@ -67,10 +68,10 @@
         if (tabbarData.viewController != nil) {
             [self setTabbarNumberWithVc:tabbarData.viewController index:i];
             UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarData.viewController];
-            //            navigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:tabbarData.tabTitle
-            //                                                                            image:[[UIImage imageNamed:tabbarData.imgName] imageWithRenderingMode:UIImageRenderingModeAutomatic]
-            //                                                                    selectedImage:[[UIImage imageNamed:tabbarData.selectImgName] imageWithRenderingMode:UIImageRenderingModeAutomatic]];
-            //            navigationController.tabBarItem.title = tabbarData.tabTitle;
+            navigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:tabbarData.tabTitle
+                                                                            image:[[UIImage imageNamed:tabbarData.imgName] imageWithRenderingMode:UIImageRenderingModeAutomatic]
+                                                                    selectedImage:[[UIImage imageNamed:tabbarData.selectImgName] imageWithRenderingMode:UIImageRenderingModeAutomatic]];
+            navigationController.tabBarItem.title = tabbarData.tabTitle;
             [navigationControllerList addObject:navigationController];
             i++;
         }
@@ -79,19 +80,20 @@
     
     
     //タブのタイトル位置設定
-    //    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
-    //    NSDictionary *attributes = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f],
-    //                                 NSForegroundColorAttributeName : self.theme.tabTitleNomalColor};
-    //
-    //    NSDictionary *attributes2 = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f],
-    //                                  NSForegroundColorAttributeName : self.theme.tabTitleSelectColor};
-    //
-    //    [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
-    //    [[UITabBarItem appearance] setTitleTextAttributes:attributes2 forState:UIControlStateSelected];
-    //    [UITabBar appearance].tintColor = self.theme.tabBarSelectColor;
-    //    [UITabBar appearance].barTintColor = self.theme.tabBarBackColor;
-    //    [(UITabBarController *)self.tabBarController setViewControllers:navigationControllerList animated:NO];
-    [self.window setRootViewController:[navigationControllerList objectAtIndex:0]];
+    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -1)];
+    NSDictionary *attributes = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f],
+                                 NSForegroundColorAttributeName : self.theme.tabTitleNomalColor};
+    
+    NSDictionary *attributes2 = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f],
+                                  NSForegroundColorAttributeName : self.theme.tabTitleSelectColor};
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:attributes2 forState:UIControlStateSelected];
+    [UITabBar appearance].tintColor = self.theme.tabBarSelectColor;
+    [UITabBar appearance].barTintColor = self.theme.tabBarBackColor;
+    [(UITabBarController *)self.tabBarController setViewControllers:navigationControllerList animated:NO];
+    self.tabBarController.tabBar.hidden = YES;
+    [self.window setRootViewController:self.tabBarController];
     [self.window makeKeyAndVisible];
 }
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -108,6 +110,17 @@
 {
     NSMutableArray *tabbarDataList = [NSMutableArray array];
     self.sencorViewController =[[SencorViewController alloc] initWithNibName:@"SencorViewController" bundle:nil];
+    CutomFlyerViewController *fv=[[CutomFlyerViewController alloc] initWithNibName:@"CutomFlyerViewController" bundle:nil];
+    fv.isSearchBtnInvisible = YES;
+    fv.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:fv animated:YES];
+    
+    [tabbarDataList addObject:[[TabbarData alloc]initWithViewController:fv
+                                                                imgName:@"kometubu.png"
+                                                          selectImgName:@"kometubu.png"
+                                                               tabTitle:@"米"
+                                                                  title:@"お米の選択"]];
+    
     [tabbarDataList addObject:[[TabbarData alloc]initWithViewController:
                                self.sencorViewController
                                                                 imgName:@"kometubu.png"
