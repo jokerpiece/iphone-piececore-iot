@@ -12,11 +12,11 @@
 typedef NS_ENUM(NSInteger, BLEErrType) {
     BLEErrUnconnectable = 0,
 };
-
 @protocol BLEConnectDelegate
 -(void)updateActionWithData:(NSData *)data;
 -(void)fieldActionWithBLEErrType:(BLEErrType *)errType;
 @end
+
 
 @interface BLEConnector : NSObject<CBCentralManagerDelegate, CBPeripheralDelegate, CBPeripheralManagerDelegate>
 @property (nonatomic,weak) id delegate;
@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, BLEErrType) {
 @property (nonatomic) int retryCountLimit;
 @property (nonatomic) bool isCallingServices;
 
++ (BLEConnector *)sharedManager;
 - (id)initWithServideUuid:(NSString *)serviceUuid charactoristicUuid:(NSString *)charactoristicUuid;
 -(void)startScanWithIdentifer:(NSString*)identifer retryTimer:(float)retryTimer retryCount:(int)retryCount;
 -(void)cancelPeripheralConnection;

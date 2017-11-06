@@ -23,6 +23,7 @@
 
 -(void)setBLEConnectorWithServiceUuid:(NSString *)serviceUuid CharactoristicUuid:(NSString *)charactoristicUuid{
     self.ble = [[BLEConnector alloc]initWithServideUuid:serviceUuid charactoristicUuid:charactoristicUuid];
+    //self.ble = [BLEConnector sharedManager];
     self.ble.delegate = self;
 }
 
@@ -69,7 +70,7 @@
      otherButtonTitles:@"再接続", nil
      ];
     alert.delegate = self;
-//    [alert show];
+    [alert show];
     
     
 }

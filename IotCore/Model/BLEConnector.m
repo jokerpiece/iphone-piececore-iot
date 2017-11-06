@@ -9,8 +9,30 @@
 #import "BLEConnector.h"
 #import "DLog.h"
 #import "SVProgressHUD.h"
+#import "BLEConst.h"
 
 @implementation BLEConnector
+
+static BLEConnector *sharedData_ = nil;
+
++ (BLEConnector *)sharedManager{
+    if (!sharedData_) {
+        sharedData_ = [BLEConnector new];
+        sharedData_.serviceUuid = JPSENSOR_SERVICE_UUID;
+        sharedData_.charactoristicUuid = JPSENSOR_CHARACTORISTIC_UUID;
+    }
+    return sharedData_;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        //Initialization
+    }
+    return self;
+}
+
 
 - (id)initWithServideUuid:(NSString *)serviceUuid charactoristicUuid:(NSString *)charactoristicUuid
 {
@@ -22,6 +44,7 @@
     return self;
 }
 
+//2
 -(void)startScanWithIdentifer:(NSString*)identifer retryTimer:(float)retryTimer retryCount:(int)retryCount{
     
     self.retryCountLimit = retryCount;
@@ -43,11 +66,14 @@
     }
     
     self.isCallingServices = NO;
+//    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self
+//                                                               queue:nil
+//                                                             options:@{ CBCentralManagerOptionRestoreIdentifierKey:
+//
+//                                                                            identifer}];
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self
                                                                queue:nil
-                                                             options:@{ CBCentralManagerOptionRestoreIdentifierKey:
-                                                                            
-                                                                            identifer}];
+                                                             options:nil];
 }
 
 -(void)retryScan:(NSString *)identifer{
@@ -58,13 +84,17 @@
         [self.delegate fieldActionWithBLEErrType:BLEErrUnconnectable];
     }
     self.isCallingServices = NO;
+//    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self
+//                                                               queue:nil
+//                                                             options:@{ CBCentralManagerOptionRestoreIdentifierKey:
+//
+//                                                                            identifer}];
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self
                                                                queue:nil
-                                                             options:@{ CBCentralManagerOptionRestoreIdentifierKey:
-                                                                            
-                                                                            identifer}];
+                                                             options:nil];
 }
 
+//3
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     
     NSLog(@"w:%ld", (long)central.state);
@@ -207,6 +237,7 @@ didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"willRestoreState called");
     self.centralManager = dict[CBCentralManagerRestoredStatePeripheralsKey];
+    NSLog(@"willRestoreState end");
 }
 
 -(void)cancelPeripheralConnection{
@@ -218,6 +249,10 @@ didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic
 
 -(void)connectPeripheral{
     [self.centralManager connectPeripheral:self.peripheral options:nil];
+}
+
+- (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral{
+    NSLog(@"ステート：%ld",(long)peripheral.state);
 }
 
 @end

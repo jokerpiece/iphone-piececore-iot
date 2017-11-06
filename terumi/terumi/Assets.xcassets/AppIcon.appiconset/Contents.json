@@ -48,6 +48,12 @@
       "scale" : "3x"
     },
     {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "Icon_iOS.png",
+      "scale" : "1x"
+    },
+    {
       "idiom" : "iphone",
       "size" : "60x60",
       "unassigned" : true

@@ -983,7 +983,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D5FD6471AF20B2AE62FA066B /* [CP] Copy Pods Resources */ = {
@@ -1171,7 +1171,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = terumi/terumi.entitlements;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MCM25T6BXG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
@@ -1179,8 +1180,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.mylife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9fe56d8d-a0ea-4e25-9c1a-c7b22a22ebb2";
-				PROVISIONING_PROFILE_SPECIFIER = myeline_Distribution;
+				PROVISIONING_PROFILE = "54b15f8e-88c8-429f-8ced-26607e054464";
+				PROVISIONING_PROFILE_SPECIFIER = mylife_Dev;
 			};
 			name = Debug;
 		};
@@ -1192,7 +1193,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = terumi/terumi.entitlements;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MCM25T6BXG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = terumi/Info.plist;
@@ -1200,8 +1202,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.jokerpiece.mylife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9fe56d8d-a0ea-4e25-9c1a-c7b22a22ebb2";
-				PROVISIONING_PROFILE_SPECIFIER = myeline_Distribution;
+				PROVISIONING_PROFILE = "54b15f8e-88c8-429f-8ced-26607e054464";
+				PROVISIONING_PROFILE_SPECIFIER = mylife_Dev;
 			};
 			name = Release;
 		};
